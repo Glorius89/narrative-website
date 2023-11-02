@@ -11620,6 +11620,7 @@ header.masthead .masthead-heading {
   color: #4b2600;
   font-family: 'Montserrat', sans-serif;
   font-size: 1rem;
+  font-weight: 400;
 }
 .timeline .timeline-heading h4.subheading, .timeline .timeline-heading .subheading.h4 {
   text-transform: none;
