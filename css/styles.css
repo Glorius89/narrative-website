@@ -11617,11 +11617,15 @@ header.masthead .masthead-heading {
 }
 .timeline .timeline-heading h4, .timeline .timeline-heading .h4 {
   margin-top: 0;
-  color: inherit;
+  color: #4b2600;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1rem;
 }
 .timeline .timeline-heading h4.subheading, .timeline .timeline-heading .subheading.h4 {
   text-transform: none;
-  color: #000;
+  color: #4b2600;
+  font-family: 'PT Serif', serif;
+  font-size: 2.5rem;
 }
 .timeline .timeline-body > ul,
 .timeline .timeline-body > p {
