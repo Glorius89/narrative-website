@@ -120,6 +120,7 @@ h1, .h1 {
 
 h2, .h2 {
   font-size: calc(1.325rem + 0.9vw);
+  color: #000;
 }
 @media (min-width: 1200px) {
   h2, .h2 {
@@ -11305,16 +11306,18 @@ p {
   padding: 6rem 0;
 }
 .page-section h2.section-heading, .page-section .section-heading.h2 {
-  font-size: 2.5rem;
+  font-size: 5rem;
   margin-top: 0;
   margin-bottom: 1rem;
 }
 .page-section h3.section-subheading, .page-section .section-subheading.h3 {
-  font-size: 1rem;
+  font-size: 2rem;
   font-weight: 400;
-  font-style: italic;
-  font-family: "Roboto Slab", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  margin-bottom: 4rem;
+  font-family: 'PT Serif', serif;
+  text-align: centre;
+  margin-bottom: 15rem;
+  margin-left: 16rem;
+  margin-right: 16rem;
 }
 
 @media (min-width: 768px) {
@@ -11617,21 +11620,26 @@ header.masthead .masthead-heading {
 }
 .timeline .timeline-heading h4, .timeline .timeline-heading .h4 {
   margin-top: 0;
-  color: #4b2600;
+  margin-bottom: 1;
+  color: #999;
   font-family: 'Montserrat', sans-serif;
-  font-size: 1rem;
-  font-weight: 400;
+  font-size: 1.2rem;
+  font-weight: 100;
 }
 .timeline .timeline-heading h4.subheading, .timeline .timeline-heading .subheading.h4 {
   text-transform: none;
-  color: #4b2600;
+  color: #000000;
   font-family: 'PT Serif', serif;
   font-size: 2.5rem;
+  font-weight: 700;
+  line-height: 1;
+  margin-bottom: 20px;
 }
 .timeline .timeline-body > ul,
 .timeline .timeline-body > p {
   margin-bottom: 0;
-  font-size: 2rem;
+  font-size: 1.5rem;
+  line-height: 30px;
 }
 
 @media (min-width: 768px) {
