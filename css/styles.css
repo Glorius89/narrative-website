@@ -11626,6 +11626,7 @@ header.masthead .masthead-heading {
 .timeline .timeline-body > ul,
 .timeline .timeline-body > p {
   margin-bottom: 0;
+  font-size: 2rem;
 }
 
 @media (min-width: 768px) {
