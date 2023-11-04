@@ -11430,31 +11430,30 @@ header.masthead .masthead-subheading {
   font-size: 1.5rem;
   line-height: 1.5rem;
   margin-bottom: 25px;
-  font-family: 'Merriweather', serif;
+  font-family: 'PT Serif' , serif;
 }
 header.masthead .masthead-heading {
   font-size: 1.25rem;
   font-weight: 700;
   line-height: 3.25rem;
   margin-bottom: 2rem;
-  font-family: 'Merriweather', serif;
+  font-family: 'PT Serif' , serif;
 }
 
 @media (min-width: 768px) {
   header.masthead {
-    padding-top: 17.5rem;
-    padding-bottom: 12.5rem;
+    padding-top: 20rem;
+    padding-bottom: 10rem;
   }
   header.masthead .masthead-subheading {
-    font-size: 5rem;
-    font-weight: 700;
+    font-size: 1.5rem;
+    font-weight: 200;
     line-height: 2.25rem;
     margin-bottom: 2rem;
   }
   header.masthead .masthead-heading {
-    font-size: 1.5rem;
-    font-weight: 200;
-    font-style: italic;
+    font-size: 8rem;
+    font-weight: 500;
     line-height: 2rem;
     margin-bottom: 4rem;
     margin-right: 10rem;
