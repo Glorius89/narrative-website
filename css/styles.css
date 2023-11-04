@@ -11366,12 +11366,14 @@ p {
   height: 1.5rem;
 }
 #mainNav .navbar-nav .nav-item .nav-link {
-  font-family: 'Merriweather', serif;  font-size: 0.95rem;
+  font-family: 'Merriweather', serif;  
+  font-size: 0.95rem;
+  font-weight: 700;
   color: #fff;
   letter-spacing: 0.0625em;
 }
 #mainNav .navbar-nav .nav-item .nav-link.active, #mainNav .navbar-nav .nav-item .nav-link:hover {
-  color: #4bb4ac;
+  color: #3d7ec2;
 }
 
 @media (min-width: 992px) {
