@@ -11446,15 +11446,19 @@ header.masthead .masthead-heading {
     padding-bottom: 12.5rem;
   }
   header.masthead .masthead-subheading {
-    font-size: 3.25rem;
+    font-size: 5rem;
+    font-weight: 700;
     line-height: 2.25rem;
     margin-bottom: 2rem;
   }
   header.masthead .masthead-heading {
     font-size: 1.5rem;
-    font-weight: 700;
-    line-height: 4.5rem;
+    font-weight: 200;
+    font-style: italic;
+    line-height: 2rem;
     margin-bottom: 4rem;
+    margin-right: 10rem;
+    margin-left: 10rem;
   }
 }
 #portfolio .portfolio-item {
