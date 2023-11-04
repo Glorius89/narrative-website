@@ -3474,11 +3474,11 @@ textarea.form-control-lg {
 
 .btn-link {
   font-weight: 400;
-  color: #ffc800;
+  color: #4bb4ac;
   text-decoration: underline;
 }
 .btn-link:hover {
-  color: #cca000;
+  color: #4bb4ac;
 }
 .btn-link:disabled, .btn-link.disabled {
   color: #6c757d;
@@ -3783,7 +3783,7 @@ textarea.form-control-lg {
 .dropdown-item.active, .dropdown-item:active {
   color: #fff;
   text-decoration: none;
-  background-color: #ffc800;
+  background-color: #4bb4ac;
 }
 .dropdown-item.disabled, .dropdown-item:disabled {
   color: #adb5bd;
@@ -3824,7 +3824,7 @@ textarea.form-control-lg {
 }
 .dropdown-menu-dark .dropdown-item.active, .dropdown-menu-dark .dropdown-item:active {
   color: #fff;
-  background-color: #ffc800;
+  background-color: #4bb4ac;
 }
 .dropdown-menu-dark .dropdown-item.disabled, .dropdown-menu-dark .dropdown-item:disabled {
   color: #adb5bd;
@@ -3946,7 +3946,7 @@ textarea.form-control-lg {
 .nav-link {
   display: block;
   padding: 0.5rem 1rem;
-  color: #ffc800;
+  color: #4bb4ac;
   text-decoration: none;
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
 }
@@ -4003,7 +4003,7 @@ textarea.form-control-lg {
 .nav-pills .nav-link.active,
 .nav-pills .show > .nav-link {
   color: #fff;
-  background-color: #ffc800;
+  background-color: #4bb4ac;
 }
 
 .nav-fill > .nav-link,
@@ -11356,7 +11356,7 @@ p {
   font-weight: 700;
 }
 #mainNav .navbar-brand {
-  color: #ffc800;
+  color: #4bb4ac;
   font-family: 'Merriweather', serif;
   font-weight: 700;
   letter-spacing: 0.0625em;
@@ -11371,7 +11371,7 @@ p {
   letter-spacing: 0.0625em;
 }
 #mainNav .navbar-nav .nav-item .nav-link.active, #mainNav .navbar-nav .nav-item .nav-link:hover {
-  color: #ffc800;
+  color: #4bb4ac;
 }
 
 @media (min-width: 992px) {
@@ -11421,6 +11421,7 @@ header.masthead {
   background-size: cover;
   margin-left: 20px;
   margin-right: 20px;
+  margin-top: 15px;
   border-radius: 30px 30px 30px 30px;
 }
 header.masthead .masthead-subheading {
