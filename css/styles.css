@@ -141,6 +141,7 @@ h4, .h4 {
   font-size: 2rem;
   color: #000;
 }
+
 @media (min-width: 1200px) {
   h4, .h4 {
     font-size: 2.8rem;
@@ -11418,6 +11419,9 @@ header.masthead {
   background-attachment: scroll;
   background-position: center center;
   background-size: cover;
+  margin-left: 20px;
+  margin-right: 20px;
+  border-radius: 30px 30px 30px 30px;
 }
 header.masthead .masthead-subheading {
   font-size: 1.5rem;
@@ -11641,6 +11645,7 @@ header.masthead .masthead-heading {
   font-size: 1.5rem;
   line-height: 30px;
 }
+
 
 @media (min-width: 768px) {
   .timeline:before {
