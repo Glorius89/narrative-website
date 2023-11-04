@@ -61,7 +61,7 @@
   --bs-body-font-weight: 400;
   --bs-body-line-height: 1.5;
   --bs-body-color: #999;
-  --bs-body-bg: #fff;
+  --bs-body-bg: #000;
 }
 
 *,
@@ -11423,7 +11423,7 @@ header.masthead {
   background-size: cover;
   margin-left: 20px;
   margin-right: 20px;
-  margin-top: 15px;
+  margin-top: 70px;
   border-radius: 30px 30px 30px 30px;
 }
 header.masthead .masthead-subheading {
@@ -11442,8 +11442,8 @@ header.masthead .masthead-heading {
 
 @media (min-width: 768px) {
   header.masthead {
-    padding-top: 20rem;
-    padding-bottom: 10rem;
+    padding-top: 16rem;
+    padding-bottom: 12rem;
   }
   header.masthead .masthead-subheading {
     font-size: 1.5rem;
