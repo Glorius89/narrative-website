@@ -61,7 +61,7 @@
   --bs-body-font-weight: 400;
   --bs-body-line-height: 1.5;
   --bs-body-color: #999;
-  --bs-body-bg: #000;
+  --bs-body-bg: #fff;
 }
 
 *,
@@ -11367,9 +11367,9 @@ p {
 }
 #mainNav .navbar-nav .nav-item .nav-link {
   font-family: 'Merriweather', serif;  
-  font-size: 0.95rem;
+  font-size: 1rem;
   font-weight: 500;
-  color: #fff;
+  color: #000;
   letter-spacing: 0.0625em;
 }
 #mainNav .navbar-nav .nav-item .nav-link.active, #mainNav .navbar-nav .nav-item .nav-link:hover {
