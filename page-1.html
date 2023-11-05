@@ -40,7 +40,6 @@
         <!-- Masthead-->
         <header class="masthead">
             <div class="container">
-                <div class="masthead-subheading">Welcome</div>
                 <div class="masthead-heading text-uppercase">History</div>
             </div>
         </header>
@@ -54,14 +53,32 @@
             </div>
                 <ul class="timeline">
                     <li>
-                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/timeline/prehistory-7.jpg" alt="..." /></div>
+                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/timeline/prehistory-7.jpg" alt="..."/></div>
                         <div class="timeline-panel">
                             <div class="timeline-heading">
                                 <h4>8TH CENTURY BCE</h4>
                                 <h4 class="subheading">Neolithic Settlements</h4>
                             </div>
-                            <div class="timeline-body"><p class="text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eveniet optio sunt reiciendis molestias at nihil? Voluptatibus voluptates omnis, deleniti reiciendis iusto quia facere officia nihil doloremque, aperiam animi doloribus dolorum, voluptatem similique quibusdam. <span class="readmore"> recusandae nostrum numquam dicta nisi facere dolor incidunt ipsam, enim magni animi quod similique voluptatum soluta sint officia aperiam. Molestias sit voluptates eaque non ipsa, esse explicabo neque praesentium fugit deleniti voluptate quam natus fuga quisquam animi necessitatibus cupiditate unde iusto iure molestiae vero. Itaque, unde. Cumque suscipit temporibus veniam nam unde inventore illum, molestiae architecto eius laborum error, aliquam consequuntur sequi quis autem officiis cum.</span></p></div>
-                            <button class="read-more-btn">Read More</button>
+                            <div class="timeline-body"><p class="text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eveniet optio sunt reiciendis molestias at nihil? Voluptatibus voluptates omnis, deleniti reiciendis iusto quia facere officia nihil doloremque, aperiam animi doloribus dolorum, voluptatem similique quibusdam.<span id="dots">...</span><span id="more">recusandae nostrum numquam dicta nisi facere dolor incidunt ipsam, enim magni animi quod similique voluptatum soluta sint officia aperiam. Molestias sit voluptates eaque non ipsa, esse explicabo neque praesentium fugit deleniti voluptate quam natus fuga quisquam animi necessitatibus cupiditate unde iusto iure molestiae vero. Itaque, unde. Cumque suscipit temporibus veniam nam unde inventore illum, molestiae architecto eius laborum error, aliquam consequuntur sequi quis autem officiis cum.</span></p></div>
+                            <button onclick="myFunction()" id="myBtn">Read more</button>
+
+                            <script>
+                                function myFunction() {
+                                  var dots = document.getElementById("dots");
+                                  var moreText = document.getElementById("more");
+                                  var btnText = document.getElementById("myBtn");
+                                
+                                  if (dots.style.display === "none") {
+                                    dots.style.display = "inline";
+                                    btnText.innerHTML = "Read more"; 
+                                    moreText.style.display = "none";
+                                  } else {
+                                    dots.style.display = "none";
+                                    btnText.innerHTML = "Read less"; 
+                                    moreText.style.display = "inline";
+                                  }
+                                }
+                                </script>
                         </div>
                     </li>
                     <li class="timeline-inverted">
@@ -71,68 +88,32 @@
                                 <h4>29 BCE</h4>
                                 <h4 class="subheading">Romans Rule</h4>
                             </div>
-                            <div class="timeline-body"><p class="text-muted">Around 29 BCE, Sofia became part of the Roman Empire. During this time, the city expanded and several buildings were erected, such as public baths and amphitheaters. Under the Emperor Trajan, the city flourished and became a significant political and economical centre. Sofia reached its greatest height with the establishment of the Council of Serdica, an ecclesiastical meeting of Christian bishops. Following the division of the Roman Empire, the city was ruled by the western emperors.</p></div>
+                            <div class="timeline-body"><p class="text-muted">Around 29 BCE, Sofia became part of the Roman Empire. During this time, the city expanded and several buildings were erected, such as public baths, basilicas, and amphitheaters. Under the Emperor Trajan, the city flourished and became a significant political and economical centre. Sofia reached its greatest height with the establishment of the Council of Serdica, an ecclesiastical meeting of Christian bishops. Following the division of the Roman Empire, the city passed to Byzantium. In the 5th century, the city was destroyed by the Huns, and then rebuilt by the Emperor Justinian who renamed the city to 'Triaditsa'.</p></div>
                         </div>
                     </li>
                     <li>
-                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/about/3.jpg" alt="..." /></div>
+                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/timeline/monument-of-libery-2.jpg" alt="..." /></div>
                         <div class="timeline-panel">
                             <div class="timeline-heading">
-                                <h4>14TH-19TH CENTURY<h4>
-                                <h4 class="subheading">Ottoman Rule</h4>
+                                <h4>809 CE<h4>
+                                <h4 class="subheading">Bulgarian Empire</h4>
                             </div>
-                            <div class="timeline-body"><p class="text-muted">1382 marked the beginning of five centuries of Ottoman rule of Bulgaria. A three-month siege was needed for the city to surrender.</p></div>
+                            <div class="timeline-body"><p class="text-muted">During the reign of Khan Krum, Sofia was incorporated into the First Bulgarian Empire and changed name to Sredets. The city was under the Bysantine rule from 1018 until 1185, when it was reincorporated into the Bulgarian Empire under the reign of Tsar Ivan Asen I.</p></div>
                         </div>
                     </li>
                     <li class="timeline-inverted">
-                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/Timeline/Prehistory.jpg" alt="..." /></div>
+                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/Timeline/turkish-empire.jpg" alt="..." /></div>
                         <div class="timeline-panel">
                             <div class="timeline-heading">
-                                <h4>1944-1989</h4>
-                                <h4 class="subheading">Soviet Rule</h4>
+                                <h4>1520-1836</h4>
+                                <h4 class="subheading">Ottomans Rule</h4>
                             </div>
-                            <div class="timeline-body"><p class="text-muted">After the Communist party came into power, it started massive construction works. The center of Sofia was heavily bombed during WWII and many public buildings had to be erected again. The new buildings were imposing, the squares were spacious, the whole city was sprinkled with Communist monuments, some of which remain today.</p></div>
+                            <div class="timeline-body"><p class="text-muted">During the Ottoman-Bulgarian War, Sredets fell into </p></div>
                         </div>
                     </li>
                 </ul>
             </div>
         </section>
-        <!-- Team-->
-        <section class="page-section bg-light" id="team">
-            <div class="container">
-                <div class="text-center">
-                    <h2 class="section-heading text-uppercase">Team</h2>
-                    <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
-                </div>
-                <div class="row">
-                    <div class="col-lg-4">
-                        <div class="team-member">
-                            <img class="mx-auto rounded-circle" src="assets/img/team/1.jpg" alt="..." />
-                            <h4>Title</h4>
-                            <p class="text-muted">Text</p>
-                        </div>
-                    </div>
-                    <div class="col-lg-4">
-                        <div class="team-member">
-                            <img class="mx-auto rounded-circle" src="assets/img/team/2.jpg" alt="..." />
-                            <h4>Title</h4>
-                            <p class="text-muted">Text</p>
-                        </div>
-                    </div>
-                    <div class="col-lg-4">
-                        <div class="team-member">
-                            <img class="mx-auto rounded-circle" src="assets/img/team/3.jpg" alt="..." />
-                            <h4>Title</h4>
-                            <p class="text-muted">Text</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-lg-8 mx-auto text-center"><p class="large text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque, laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut unde.</p></div>
-                </div>
-            </div>
-        </section>
-
         <!-- Footer-->
         <footer class="footer py-4">
             <div class="container">
