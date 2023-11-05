@@ -11631,7 +11631,7 @@ header.masthead .masthead-heading {
   margin-bottom: 0;
 }
 .timeline .timeline-heading h4, .timeline .timeline-heading .h4 {
-  margin-top: 0;
+  margin-top: 30px;
   margin-bottom: 1;
   color: #999;
   font-family: 'Montserrat', sans-serif;
@@ -11666,7 +11666,7 @@ header.masthead .masthead-heading {
   .timeline > li .timeline-panel {
     float: left;
     width: 41%;
-    padding: 0 20px 20px 30px;
+    padding: 50px 20px 20px 30px;
     text-align: right;
   }
   .timeline > li .timeline-image {
