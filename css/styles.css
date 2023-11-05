@@ -11368,7 +11368,7 @@ p {
 #mainNav .navbar-nav .nav-item .nav-link {
   font-family: 'Merriweather', serif;  
   font-size: 0.95rem;
-  font-weight: 700;
+  font-weight: 500;
   color: #fff;
   letter-spacing: 0.0625em;
 }
@@ -11423,7 +11423,7 @@ header.masthead {
   background-size: cover;
   margin-left: 20px;
   margin-right: 20px;
-  margin-top: 70px;
+  margin-top: 75px;
   border-radius: 30px 30px 30px 30px;
 }
 header.masthead .masthead-subheading {
