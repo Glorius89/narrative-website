@@ -352,7 +352,7 @@ optgroup,
 textarea {
   margin: 0;
   margin-top: 30px;
-  font-family: 'PT serif'; serif;
+  font-family: 'PT serif';
   font-size: 1.5rem;
   line-height: inherit;
   background-color: #fff;
@@ -11357,13 +11357,14 @@ p {
 #mainNav .navbar-toggler {
   padding: 0.75rem;
   font-size: 0.75rem;
-  font-family: 'PT Serif', serif;
+  font-family: 'Shrikhand', serif;
   text-transform: lowercase;
   font-weight: 700;
 }
 #mainNav .navbar-brand {
   color: #4bb4ac;
   font-family: 'Shrikhand', serif;
+  font-style: italic;
   font-weight: 700;
   letter-spacing: 0.0625em;
 }
@@ -11740,8 +11741,8 @@ header.masthead .masthead-heading {
   text-align: center;
 }
 .team-member img {
-  width: 14rem;
-  height: 14rem;
+  width: 9rem;
+  height: 9rem;
   border: 0.5rem solid rgba(0, 0, 0, 0.1);
 }
 .team-member h4, .team-member .h4 {
