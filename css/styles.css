@@ -11467,6 +11467,40 @@ header.masthead .masthead-heading {
     margin-right: 10rem;
     margin-left: 10rem;
   }
+
+  .ft-img-credit {
+    font-size: 12px;
+    width: 30px;
+    height: 30px;
+    color: #fff;
+    line-height: 30px;
+    text-align: center;
+    display: inline-block;
+    padding: 4p 5px;
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    background-color: rgba(0,0,0,0.3);
+    border-radius: 50%;
+    opacity: 0.6;
+}
+.ft-img-credit {
+    font-size: 12px;
+    width: 30px;
+    height: 30px;
+    color: #fff;
+    line-height: 30px;
+    text-align: center;
+    display: inline-block;
+    padding: 4p 5px;
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    background-color: rgba(0,0,0,.3);
+    border-radius: 50%;
+    opacity: .6;
+}
+
 }
 #portfolio .portfolio-item {
   max-width: 26rem;
