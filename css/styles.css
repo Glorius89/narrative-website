@@ -60,7 +60,7 @@
   --bs-body-font-size: 1rem;
   --bs-body-font-weight: 400;
   --bs-body-line-height: 1.5;
-  --bs-body-color: #999;
+  --bs-body-color: #000;
   --bs-body-bg: #fff;
 }
 
@@ -7780,7 +7780,7 @@ textarea.form-control-lg {
 
 .text-muted {
   --bs-text-opacity: 1;
-  color: #6c757d !important;
+  color: #000 !important;
 }
 
 .text-black-50 {
@@ -11363,7 +11363,7 @@ p {
 }
 #mainNav .navbar-brand {
   color: #4bb4ac;
-  font-family: 'PT Serif', serif;
+  font-family: 'Shrikhand', serif;
   font-weight: 700;
   letter-spacing: 0.0625em;
 }
@@ -11423,7 +11423,7 @@ header.masthead {
   padding-bottom: 6rem;
   text-align: center;
   color: #fff;
-  background-image: url("../assets/img/portfolio/7.jpg");
+  background-image: url("../assets/img/portfolio/7.jpg"); 
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-position: center center;
