@@ -352,10 +352,10 @@ optgroup,
 textarea {
   margin: 0;
   margin-top: 30px;
-  font-family: PT serif; serif;
+  font-family: 'PT serif'; serif;
   font-size: 1.5rem;
   line-height: inherit;
-  background-color: #0d6efd;
+  background-color: #fff;
   border-radius: 25px;
   width: 150px;
   height: 50px;
@@ -11584,7 +11584,7 @@ header.masthead .masthead-heading {
   width: 100%;
   padding: 0 20px 0 100px;
   text-align: left;
-  background-color: #ece4da;
+  background-color: #ffecbd;
   border-radius: 15px 50px;
 }
 .timeline > li .timeline-panel:before {
