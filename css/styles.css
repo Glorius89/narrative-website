@@ -610,6 +610,7 @@ progress {
 .img-fluid {
   max-width: 100%;
   height: auto;
+  border-radius: 30px 30px 30px 30px;
 }
 
 .img-thumbnail {
@@ -7846,7 +7847,7 @@ textarea.form-control-lg {
 
 .bg-light {
   --bs-bg-opacity: 1;
-  background-color: rgba(var(--bs-light-rgb), var(--bs-bg-opacity)) !important;
+  background-color: #dceef7;
 }
 
 .bg-dark {
