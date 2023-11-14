@@ -4102,6 +4102,7 @@ textarea.form-control-lg {
   border: 1px solid transparent;
   border-radius: 0.25rem;
   transition: box-shadow 0.15s ease-in-out;
+  background-color: #fff;
 }
 @media (prefers-reduced-motion: reduce) {
   .navbar-toggler {
@@ -11315,10 +11316,43 @@ p {
 .page-section {
   padding: 6rem 0;
 }
+.page-section-landmarks {
+  padding-top: 4.5rem;
+  padding-bottom: 2rem;
+}
+.page-section-landmarks2 {
+  padding-top: 4.5rem;
+  padding-bottom: 2rem;
+}
+.page-section-landmarks3 {
+  padding-top: 4.5rem;
+  padding-bottom: 2rem;
+}
 .page-section h2.section-heading, .page-section .section-heading.h2 {
-  font-size: 5rem;
+  font-size: 1rem;
   margin-top: 0;
   margin-bottom: 1rem;
+}
+.page-section-landmarks h2.section-heading-landmarks, .page-section-landmarks .section-heading-landmarks.h2 {
+  font-family: 'Merriweather', serif;
+  font-size: 2rem;
+  color: #494949;
+  margin-top: 0;
+  margin-bottom: 2.5rem;
+}
+.page-section-landmarks2 h2.section-heading-landmarks, .page-section-landmarks .section-heading-landmarks.h2 {
+  font-family: 'Merriweather', serif;
+  font-size: 2rem;
+  color: #494949;
+  margin-top: 0;
+  margin-bottom: 2.5rem;
+}
+.page-section-landmarks3 h2.section-heading-landmarks, .page-section-landmarks .section-heading-landmarks.h2 {
+  font-family: 'Merriweather', serif;
+  font-size: 2rem;
+  color: #494949;
+  margin-top: 0;
+  margin-bottom: 2.5rem;
 }
 .page-section h3.section-subheading, .page-section .section-subheading.h3 {
   font-size: 2rem;
@@ -11329,7 +11363,15 @@ p {
   margin-left: 16rem;
   margin-right: 16rem;
 }
-
+.page-section h3.section-subheading-landmarks, .page-section .section-subheading-landmarks.h3 {
+  font-size: 2rem;
+  font-weight: 400;
+  font-family: 'PT Serif', serif;
+  text-align: centre;
+  margin-bottom: 15rem;
+  margin-left: 16rem;
+  margin-right: 16rem;
+}
 @media (min-width: 768px) {
   section {
     padding: 9rem 0;
@@ -11355,7 +11397,7 @@ p {
 #mainNav {
   padding-top: 1rem;
   padding-bottom: 1rem;
-  background-color: #ffffff;
+  background-color: #fff;
   margin-right: 0;
 }
 #mainNav .navbar-toggler {
@@ -11407,7 +11449,7 @@ p {
   #mainNav.navbar-shrink {
     padding-top: 1rem;
     padding-bottom: 1rem;
-    background-color: #ffffff;
+    background-color: #fff;
   }
   #mainNav.navbar-shrink .navbar-brand {
     font-size: 1.25em;
@@ -11630,7 +11672,21 @@ header.masthead .masthead-heading {
   text-align: center;
   background-color: #fff;
   border-radius: 30px 30px 30px 30px;
-
+}
+#portfolio .portfolio-item-landmarks .portfolio-caption-landmarks {
+    padding-top: 1.9rem;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    padding-bottom: 4.5rem;
+    text-align: center;
+    background-color: #dceef7;
+    border-radius: 30px 30px 30px 30px;
+}
+#portfolio .portfolio-item-landmarks .portfolio-caption-landmarks .portfolio-caption-heading-landmarks {
+  font-size: 1.5rem;
+  font-family: 'Merriweather', serif;
+  font-weight: 700;
+  margin-bottom: 0;
 }
 #portfolio .portfolio-item .portfolio-caption .portfolio-caption-heading {
   font-size: 1.5rem;
