@@ -11436,6 +11436,63 @@ header.masthead {
   margin-top: 75px;
   border-radius: 30px 30px 30px 30px;
 }
+.masthead-history {
+  padding-top: 37rem;
+  padding-bottom: 6rem;
+  text-align: center;
+  color: #fff;
+  background-image: url("../assets/img/background/history-background.jpg"); 
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: center center;
+  background-size: cover;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 75px;
+  border-radius: 30px 30px 30px 30px;
+}
+.masthead-landmarks {
+  padding-top: 37rem;
+  padding-bottom: 6rem;
+  text-align: center;
+  color: #fff;
+  background-image: url("../assets/img/background/landmarks-background.jpg");
+  background-attachment: scroll;
+  background-position: center center;
+  background-size: cover;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 75px;
+  border-radius: 30px 30px 30px 30px;
+}
+.masthead-food {
+  padding-top: 37rem;
+  padding-bottom: 6rem;
+  text-align: center;
+  color: #fff;
+  background-image: url("../assets/img/background/food-background.jpg");
+  background-attachment: scroll;
+  background-position: center center;
+  background-size: cover;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 75px;
+  border-radius: 30px 30px 30px 30px;
+}
+.masthead-thingstoknow {
+  padding-top: 37rem;
+  padding-bottom: 6rem;
+  text-align: center;
+  color: #fff;
+  background-image: url("../assets/img/background/things-to-know-background.jpg");
+  background-attachment: scroll;
+  background-position: center center;
+  background-size: cover;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 75px;
+  border-radius: 30px 30px 30px 30px;
+}
 header.masthead .masthead-subheading {
   font-size: 1.5rem;
   line-height: 1.5rem;
@@ -11469,7 +11526,38 @@ header.masthead .masthead-heading {
     margin-right: 10rem;
     margin-left: 10rem;
   }
-
+  header.masthead-history .masthead-heading-history {
+    font-size: 8rem;
+    font-weight: 500;
+    line-height: 2rem;
+    margin-bottom: 4rem;
+    margin-right: 10rem;
+    margin-left: 10rem;
+  }
+  header.masthead-landmarks .masthead-heading-landmarks {
+    font-size: 8rem;
+    font-weight: 500;
+    line-height: 2rem;
+    margin-bottom: 4rem;
+    margin-right: 10rem;
+    margin-left: 10rem;
+  }
+  header.masthead-food .masthead-heading-food {
+    font-size: 8rem;
+    font-weight: 500;
+    line-height: 2rem;
+    margin-bottom: 4rem;
+    margin-right: 10rem;
+    margin-left: 10rem;
+  }
+  header.masthead-thingstoknow .masthead-heading-thingstoknow {
+    font-size: 8rem;
+    font-weight: 500;
+    line-height: 2rem;
+    margin-bottom: 4rem;
+    margin-right: 10rem;
+    margin-left: 10rem;
+  }
   .ft-img-credit {
     font-size: 12px;
     width: 30px;
