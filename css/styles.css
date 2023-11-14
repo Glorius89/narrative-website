@@ -4091,6 +4091,7 @@ textarea.form-control-lg {
   flex-basis: 100%;
   flex-grow: 1;
   align-items: center;
+  background-color: #fff;
 }
 
 .navbar-toggler {
@@ -4241,6 +4242,7 @@ textarea.form-control-lg {
   .navbar-expand-lg {
     flex-wrap: nowrap;
     justify-content: flex-start;
+    background-color: #fff;
   }
   .navbar-expand-lg .navbar-nav {
     flex-direction: row;
@@ -11353,8 +11355,8 @@ p {
 #mainNav {
   padding-top: 1rem;
   padding-bottom: 1rem;
-  background-color: #212529;
-  margin-right: 100px;
+  background-color: #ffffff;
+  margin-right: 0;
 }
 #mainNav .navbar-toggler {
   padding: 0.75rem;
@@ -11405,7 +11407,7 @@ p {
   #mainNav.navbar-shrink {
     padding-top: 1rem;
     padding-bottom: 1rem;
-    background-color: #212529;
+    background-color: #ffffff;
   }
   #mainNav.navbar-shrink .navbar-brand {
     font-size: 1.25em;
@@ -11437,7 +11439,7 @@ header.masthead {
   border-radius: 30px 30px 30px 30px;
 }
 .masthead-history {
-  padding-top: 37rem;
+  padding-top: 20rem;
   padding-bottom: 6rem;
   text-align: center;
   color: #fff;
@@ -11452,7 +11454,7 @@ header.masthead {
   border-radius: 30px 30px 30px 30px;
 }
 .masthead-landmarks {
-  padding-top: 37rem;
+  padding-top: 20rem;
   padding-bottom: 6rem;
   text-align: center;
   color: #fff;
@@ -11466,7 +11468,7 @@ header.masthead {
   border-radius: 30px 30px 30px 30px;
 }
 .masthead-food {
-  padding-top: 37rem;
+  padding-top: 20rem;
   padding-bottom: 6rem;
   text-align: center;
   color: #fff;
@@ -11480,7 +11482,7 @@ header.masthead {
   border-radius: 30px 30px 30px 30px;
 }
 .masthead-thingstoknow {
-  padding-top: 37rem;
+  padding-top: 20rem;
   padding-bottom: 6rem;
   text-align: center;
   color: #fff;
@@ -11530,7 +11532,7 @@ header.masthead .masthead-heading {
     font-size: 8rem;
     font-weight: 500;
     line-height: 2rem;
-    margin-bottom: 4rem;
+    margin-bottom: 30rem;
     margin-right: 10rem;
     margin-left: 10rem;
   }
