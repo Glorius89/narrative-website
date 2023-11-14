@@ -610,7 +610,7 @@ progress {
 .img-fluid {
   max-width: 100%;
   height: auto;
-  border-radius: 30px 30px 30px 30px;
+  border-radius: 20px 20px 20px 20px;
   margin-bottom: 1rem;
 }
 
@@ -11533,10 +11533,14 @@ header.masthead .masthead-heading {
   opacity: 1;
 }
 #portfolio .portfolio-item .portfolio-caption {
-  padding: 1.5rem;
+  padding-top: 1.9rem;
+  padding-right: 1rem;
+  padding-left: 1rem;
+  padding-bottom: 4.5rem;
   text-align: center;
   background-color: #fff;
   border-radius: 30px 30px 30px 30px;
+
 }
 #portfolio .portfolio-item .portfolio-caption .portfolio-caption-heading {
   font-size: 1.5rem;
@@ -11622,7 +11626,7 @@ header.masthead .masthead-heading {
   width: 100%;
   padding: 0 20px 0 100px;
   text-align: left;
-  background-color: #fff5dc;
+  background-color: #fff;
   border-radius: 15px 50px;
 }
 .timeline > li .timeline-panel:before {
@@ -11697,6 +11701,7 @@ header.masthead .masthead-heading {
   margin-bottom: 0;
   font-size: 1.5rem;
   line-height: 30px;
+
 }
 
 
