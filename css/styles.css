@@ -11357,7 +11357,7 @@ p {
 .page-section h3.section-subheading, .page-section .section-subheading.h3 {
   font-size: 2rem;
   font-weight: 400;
-  font-family: 'PT Serif', serif;
+  font-family: 'Merriweather', serif;
   text-align: centre;
   margin-bottom: 15rem;
   margin-left: 16rem;
@@ -11366,7 +11366,7 @@ p {
 .page-section h3.section-subheading-landmarks, .page-section .section-subheading-landmarks.h3 {
   font-size: 2rem;
   font-weight: 400;
-  font-family: 'PT Serif', serif;
+  font-family: 'Merriweather', serif;
   text-align: centre;
   margin-bottom: 15rem;
   margin-left: 16rem;
@@ -11551,6 +11551,8 @@ header.masthead .masthead-heading {
   font-family: 'PT Serif' , serif;
 }
 
+
+
 @media (min-width: 768px) {
   header.masthead {
     padding-top: 16rem;
@@ -11681,6 +11683,7 @@ header.masthead .masthead-heading {
     text-align: center;
     background-color: #dceef7;
     border-radius: 30px 30px 30px 30px;
+    box-shadow: 5px 5px 5px grey;
 }
 #portfolio .portfolio-item-landmarks .portfolio-caption-landmarks .portfolio-caption-heading-landmarks {
   font-size: 1.5rem;
@@ -11836,8 +11839,8 @@ header.masthead .masthead-heading {
 .timeline .timeline-heading h4.subheading, .timeline .timeline-heading .subheading.h4 {
   text-transform: none;
   color: #000000;
-  font-family: 'PT Serif', serif;
-  font-size: 2.5rem;
+  font-family: 'Merriweather', serif;
+  font-size: 2rem;
   font-weight: 700;
   line-height: 1;
   margin-bottom: 20px;
@@ -11845,8 +11848,9 @@ header.masthead .masthead-heading {
 .timeline .timeline-body > ul,
 .timeline .timeline-body > p {
   margin-bottom: 0;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   line-height: 30px;
+  font-family: 'Montserrat', sans-serif;
 
 }
 
