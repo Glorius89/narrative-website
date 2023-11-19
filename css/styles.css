@@ -11372,6 +11372,18 @@ p {
   margin-left: 16rem;
   margin-right: 16rem;
 }
+.timeline-intro {
+  padding: 6rem 0;
+  background-color: green;
+}
+.timeline-intro {
+  padding: 6rem 0;
+  background-color: #fff;
+}
+.page-timeline {
+  padding: 6rem 0;
+  background-color: #dceef7;
+}
 @media (min-width: 768px) {
   section {
     padding: 9rem 0;
@@ -11669,19 +11681,19 @@ header.masthead .masthead-heading {
   opacity: 1;
 }
 #portfolio .portfolio-item .portfolio-caption {
-  padding-top: 1.9rem;
+  padding-top: 1.5rem;
   padding-right: 1rem;
   padding-left: 1rem;
-  padding-bottom: 4.5rem;
+  padding-bottom: 2rem;
   text-align: center;
   background-color: #fff;
   border-radius: 30px 30px 30px 30px;
 }
 #portfolio .portfolio-item-landmarks .portfolio-caption-landmarks {
-    padding-top: 1.9rem;
+    padding-top: 1.5rem;
     padding-right: 1rem;
     padding-left: 1rem;
-    padding-bottom: 4.5rem;
+    padding-bottom: 2rem;
     text-align: center;
     background-color: #dceef7;
     border-radius: 30px 30px 30px 30px;
@@ -11856,7 +11868,8 @@ header.masthead .masthead-heading {
 
 }
 #module {
-  font-size: 1rem;
+  font-size: 1.5rem;
+  font-family: 'PT serif', serif;
   line-height: 1.5;
 }
 
