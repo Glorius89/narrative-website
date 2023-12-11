@@ -16,6 +16,10 @@
         <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap" rel="stylesheet">
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
+        <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css">
+        <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap-theme.min.css">
+        <script type="text/javascript" src="http://code.jquery.com/jquery.min.js"></script>
+        <script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
 
     
 
@@ -47,8 +51,7 @@
                 <div class="masthead-heading-thingstoknow text-uppercase">Other</div>
             </div>
         </header>
-        
-       <!-- START THE FEATURETTES -->
+          <!-- START THE FEATURETTES -->
     <div class="container mt-5">
         <hr class="featurette-divider">
         <h2 class="my-4">Things to know before you travel</h2>
@@ -57,15 +60,13 @@
             <h2 class="featurette-heading text-center">Transport<span class="text-muted"></span></h2>
             <p class="lead text-center">Sofia has four fast and affordable ways of moving around; subway, buses, trolleybuses, and trams. If you are catching the last transport, make sure you get off at the final stop, otherwise, you might find yourself being driven to the depot rather than where you want to go.</p>
           </div>
-          <div class="col-md-5">
+          <div class="col-md-3">
             <img class="featurette-image img-fluid mx-auto" src="assets/img/others/van-image.jpg" alt="Generic placeholder image">
           </div>
         </div>
-
         <hr class="featurette-divider">
-
         <div class="row featurette">
-          <div class="col-md-7 order-md-2">
+          <div class="col-md-5 order-md-3">
             <h2 class="featurette-heading text-center">Currency<span class="text-muted"></span></h2>
             <p class="lead text-center">The currency in Bulgaria is the Bulgarian lev. Each lev is divided into 100 stotinki. When you’re buying currency for Bulgaria, look out for the currency code BGN. And once you’re in Bulgaria, you’ll see the symbol лв used to show prices.</p>
           </div>
@@ -77,11 +78,11 @@
         <hr class="featurette-divider">
 
         <div class="row featurette">
-          <div class="col-md-7">
+          <div class="col-md-3">
             <h2 class="featurette-heading text-center">Weather<span class="text-muted"></span></h2>
             <p class="lead text-center">The average temperature is of 21.7 °C (71 °F), with a minimum of 14.3 °C (57.8 °F) and a maximum of 29.1 °C (84.4 °F). On the coldest nights of the month, the temperature usually drops to around 8.5 °C (47.5 °F).</p>
           </div>
-          <div class="col-md-5">
+          <div class="col-md-7">
             <img class="featurette-image img-fluid mx-auto" src="assets/img/pexels-dan-hamill-436792.jpg" alt="Generic placeholder image">
           </div>
         </div>
@@ -90,13 +91,70 @@
       </div>
         <!-- /END THE FEATURETTES -->
 
+        <!-- OPENSTREET MAP -->
         <section class="page-section" id="about">
             <div class="container">
-                <iframe width="425" height="350" src="https://www.openstreetmap.org/export/embed.html?bbox=22.994384765625004%2C42.56977005715177%2C23.461303710937504%2C42.82008436659316&amplayer=mapnik" style="border: 1px solid black"></iframe><br/><span>My travels in your Google Maps</span>
+                <div class="portfolio-item">
+                    <img src="" alt="" />
+                        <iframe width="425" height="350" src="https://www.openstreetmap.org/export/embed.html?bbox=22.994384765625004%2C42.56977005715177%2C23.461303710937504%2C42.82008436659316&amplayer=mapnik" frameborder="0">     
+                        </iframe>
+                </div>
             </div>
         </section>
+        <!-- OPENSTREET MAP END -->
 
-        <!-- Footer-->
+        <!-- YOUTUBE VIDEO -->
+        <section class="page-section bg-light" id="team">
+            <div class="container">
+                <div class="text-center">
+                    <h2 class="section-heading text-uppercase"></h2>
+                    <h3 class="section-subheading text-muted"></h3>
+                </div>
+                <div class="row">
+                    <div class="col-lg-5">
+                        <div class="team-member">
+                            <h3 class="section-heading-video text-left" style="font-size:1.5rem"><i>Discover</i></h3>
+                                <h4 class="section-heading-video low-highlight text-left" style="text-transform:uppercase">Sofia</h4>
+                                    <p class="text-muted" style="font-size:1rem">Discover Sofia's highlights on my initial day in the capital of Bulgaria. My exploration in Sofia encompasses a visit to the <b>Cathedral</b> and the elusive <b>Roman city of Serdica</b>, concealed beneath the city center.</p>
+                                        <a class="btn btn-primary btn-xl" href="https://www.youtube.com/watch?time_continue=18&v=sDpMIFDKUvM&source_ve_path=MjM4NTE&feature=emb_title">Watch now</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-5">
+                        <div class="team-member">
+                            <iframe width="640" height="360" src="https://www.youtube.com/embed/sDpMIFDKUvM?autoplay=1&mute=1" title="A LOST CITY Under SOFIA | Exploring BULGARIA'S Capital" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        </div>
+                    </div>
+        </section>
+        <!-- /YOUTUBE VIDEO END -->
+
+
+        <!-- FLIP CARD START -->
+        <section>     
+            <div class="wrapper">
+                <div class="card front-face">
+                    <img src="https://images.unsplash.com/photo-1492288991661-058aa541ff43?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80">
+                </div>
+                <div class="card back-face">
+                    <img src="https://images.unsplash.com/photo-1492288991661-058aa541ff43?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80">
+                    <div class="info">
+                        <div class="title">
+                            CodingLab</div>
+                        <p>
+                            User interface designer and <br>front-end developer</p>
+                    </div>
+                    <ul>
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    <!-- FLIP CARD END -->
+
+
+    <!-- FOOTER -->
         <footer class="footer py-4">
             <div class="container">
                 <div class="row align-items-center">
@@ -104,7 +162,7 @@
                     <div class="col-lg-4 my-3 my-lg-0">
                         <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
                         <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-                        <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a class="btn btn-dark btn-social mx-2" href="https://www.instagram.com/_visit_sofia_/#!" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
                     </div>
                     <div class="col-lg-4 text-lg-end">
                         <a class="link-dark text-decoration-none me-3" href="#!">Privacy Policy</a>
