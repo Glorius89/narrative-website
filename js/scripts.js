@@ -54,9 +54,3 @@ window.addEventListener('DOMContentLoaded', event => {
 
 });
 
-$(".option").click(function(){
-    $(".option").removeClass("active");
-    $(this).addClass("active");
-    
- });
- 
