@@ -90,15 +90,29 @@ body {
 }
 
 hr {
-  margin: 1rem 0;
+  margin-right: 30rem;
+  margin-left: 30rem;
   color: inherit;
   background-color: currentColor;
   border: 0;
-  opacity: 0.25;
+  opacity: 0.75;
 }
 
+hr .divider-food .banner-divider-food {
+  margin-right: 10rem;
+  color: inherit;
+  background-color: currentColor;
+  border: 0;
+  opacity: 0.75;
+}
+
+.banner-divider-food {
+  color:#ffffff;
+}
+
+
 hr:not([size]) {
-  height: 1px;
+  height: 2px;
 }
 
 h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
@@ -489,7 +503,7 @@ progress {
 }
 
 .lead {
-  font-size: 1.25rem;
+  font-size: 1.10rem;
   font-weight: 300;
 }
 
@@ -603,6 +617,13 @@ progress {
 .img-fluid {
   max-width: 100%;
   height: auto;
+  border-radius: 20px 20px 0 0;
+}
+
+.img-fluid-food {
+  max-width: 100%;
+  height: auto;
+  border-radius: 20px 20px 20px 20px;
 }
 
 .img-thumbnail {
@@ -667,6 +688,40 @@ progress {
     max-width: 1320px;
   }
 }
+
+/* Footer */
+.container-footer{
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+}
+@media (min-width: 576px) {
+  .container-footer {
+    max-width: 540px;
+  }
+}
+@media (min-width: 768px) {
+  .container-footer {
+    max-width: 720px;
+  }
+}
+@media (min-width: 992px) {
+  .container-footer {
+    max-width: 960px;
+  }
+}
+@media (min-width: 1200px) {
+  .container-footer {
+    max-width: 1140px;
+  }
+}
+@media (min-width: 1400px) {
+  .container-footer {
+    max-width: 1320px;
+  }
+}
+/* Footer */
+
 .row {
   --bs-gutter-x: 1.5rem;
   --bs-gutter-y: 0;
@@ -680,8 +735,8 @@ progress {
   flex-shrink: 0;
   width: 100%;
   max-width: 100%;
-  padding-right: calc(var(--bs-gutter-x) * 0.5);
-  padding-left: calc(var(--bs-gutter-x) * 0.5);
+  padding-right: calc(var(--bs-gutter-x) * 0.7);
+  padding-left: calc(var(--bs-gutter-x) * 0.7);
   margin-top: var(--bs-gutter-y);
 }
 
@@ -11316,9 +11371,26 @@ p {
   margin-bottom: 4rem;
 }
 
+/* Timeline Section */
+.page-timeline {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+.page-timeline h2.section-heading-timeline, .page-section-timeline .section-heading-timeline.h2 {
+  font-size: 2.5rem;
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+.page-timeline h3.section-subheading-timeline, .page-timeline .section-subheading-timeline.h3 {
+  font-size: 1rem;
+  font-weight: 400;
+  font-family: 'Montserrat', 'sans serif';
+}
+/* Timeline Section */
+
 @media (min-width: 768px) {
   section {
-    padding: 9rem 0;
+    padding: 0 0;
   }
 }
 .btn-xl {
@@ -11411,24 +11483,25 @@ header.masthead {
   padding-bottom: 6rem;
   text-align: center;
   color: #fff;
-  background-image: url("../assets/background5.jpg");
+  background-image: url("../assets/new-background2.jpg");
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-position: center center;
   background-size: cover;
 }
+
 header.masthead .masthead-subheading {
   font-size: 1.5rem;
   line-height: 1.5rem;
   margin-bottom: 25px;
-  font-family: "Roboto Slab", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: 'Montserrat', 'sans serif';
 }
 header.masthead .masthead-heading {
   font-size: 3.25rem;
   font-weight: 700;
   line-height: 3.25rem;
   margin-bottom: 2rem;
-  font-family: 'Merriweather', serif;
+  font-family: 'Montserrat', 'sans serif';
 }
 
 @media (min-width: 768px) {
@@ -11436,6 +11509,7 @@ header.masthead .masthead-heading {
     padding-top: 17rem;
     padding-bottom: 12.5rem;
   }
+  
   header.masthead .masthead-subheading {
     font-size: 2.25rem;
     line-height: 2.25rem;
@@ -11448,6 +11522,155 @@ header.masthead .masthead-heading {
     margin-bottom: 4rem;
   }
 }
+
+/* History Section */
+header.masthead-history {
+    padding-top: 10.5rem;
+    padding-bottom: 6rem;
+    text-align: center;
+    color: #fff;
+    background-image: url("../assets/img/background/history.jpg"); 
+    /* Source: https://pixabay.com/photos/bulgaria-sofia-2863340/ */
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: center center;
+    background-size: cover;
+}
+  
+header.masthead-history .masthead-subheading-history {
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+    margin-bottom: 25px;
+    font-family: 'Merriweather', serif;
+}
+
+header.masthead-history .masthead-heading-history {
+    font-size: 3.25rem;
+    font-weight: 700;
+    line-height: 3.25rem;
+    margin-bottom: 2rem;
+    font-family: 'Merriweather', serif;
+}
+  
+@media (min-width: 768px) {
+    header.masthead-history {
+      padding-top: 17rem;
+      padding-bottom: 12.5rem;
+}
+    
+header.masthead .masthead-subheading-history {
+      font-size: 2.25rem;
+      line-height: 2.25rem;
+      margin-bottom: 2rem;
+}
+
+header.masthead .masthead-heading-history {
+      font-size: 4.5rem;
+      font-weight: 700;
+      line-height: 4.5rem;
+      margin-bottom: 4rem;
+  }
+}
+/* History Section */
+
+/* Landmarks Section */
+header.masthead-landmarks {
+  padding-top: 10.5rem;
+  padding-bottom: 6rem;
+  text-align: center;
+  color: #fff;
+  background-image: url("../assets/img/background/landmarks.jpg");
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: center center;
+  background-size: cover;
+}
+
+header.masthead-landmarks .masthead-subheading-landmarks {
+  font-size: 1.5rem;
+  line-height: 1.5rem;
+  margin-bottom: 25px;
+  font-family: 'Merriweather', serif;
+}
+
+header.masthead-landmarks .masthead-heading-landmarks {
+  font-size: 3.25rem;
+  font-weight: 700;
+  line-height: 3.25rem;
+  margin-bottom: 2rem;
+  font-family: 'Merriweather', serif;
+}
+
+@media (min-width: 768px) {
+  header.masthead-landmarks {
+    padding-top: 17rem;
+    padding-bottom: 12.5rem;
+}
+  
+header.masthead-landmarks .masthead-subheading-landmarks {
+    font-size: 2.25rem;
+    line-height: 2.25rem;
+    margin-bottom: 2rem;
+}
+
+header.masthead-landmarks .masthead-heading-landmarks {
+    font-size: 4.5rem;
+    font-weight: 700;
+    line-height: 4.5rem;
+    margin-bottom: 4rem;
+}
+}
+/* Landmarks Section */
+
+/* FOOD SECTION */
+header.masthead-food {
+  padding-top: 10.5rem;
+  padding-bottom: 6rem;
+  text-align: center;
+  color: #fff;
+  background-image: url("../assets/img/background/Untitled\ design\ \(1\).jpg");
+  /* Source: https://www.pexels.com/photo/delicious-acai-smoothie-bowl-in-close-up-photography-4099236/ */
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: center center;
+  background-size: cover;
+}
+
+header.masthead-food .masthead-subheading-food {
+  font-size: 1rem;
+  line-height: 1.5rem;
+  margin-bottom: 25px;
+  font-family: 'Montserrat', 'sans serif';
+}
+
+header.masthead-food .masthead-heading-food {
+  font-size: 3.25rem;
+  font-weight: 700;
+  line-height: 3.25rem;
+  margin-bottom: 1rem;
+  font-family: 'Montserrat', 'sans serif';
+}
+
+@media (min-width: 768px) {
+  header.masthead-food {
+    padding-top: 12rem;
+    padding-bottom: 12.5rem;
+}
+  
+header.masthead-food .masthead-subheading-food {
+    font-size: 1rem;
+    line-height: 2.25rem;
+    margin-bottom: 1rem;
+}
+
+header.masthead-food .masthead-heading-food {
+    font-size: 6rem;
+    font-weight: 500;
+    line-height: 4.5rem;
+}
+}
+/* FOOD SECTION */
+
 #portfolio .portfolio-item {
   max-width: 26rem;
   margin-left: auto;
@@ -11468,6 +11691,7 @@ header.masthead .masthead-heading {
   justify-content: center;
   opacity: 0;
   transition: opacity ease-in-out 0.25s;
+  border-radius: 20px 20px 0 0;
 }
 #portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content {
   font-size: 1.25rem;
@@ -11477,13 +11701,13 @@ header.masthead .masthead-heading {
   opacity: 1;
 }
 #portfolio .portfolio-item .portfolio-caption {
-  padding: 1.5rem;
+  padding: 1rem;
   text-align: center;
   background-color: #fff;
   border-radius: 0 0 20px 20px;
 }
 #portfolio .portfolio-item .portfolio-caption .portfolio-caption-heading {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   font-family: 'Merriweather', 'serif';
   font-weight: 700;
   margin-bottom: 0;
@@ -11491,6 +11715,150 @@ header.masthead .masthead-heading {
 #portfolio .portfolio-item .portfolio-caption .portfolio-caption-subheading {
   font-family: 'Montserrat', 'sans serif';
 }
+
+
+
+#religious-buildings .portfolio-item {
+  max-width: 26rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+#religious-buildings .portfolio-item .portfolio-link {
+  position: relative;
+  display: block;
+  margin: 0 auto;
+}
+#religious-buildings .portfolio-item .portfolio-link .portfolio-hover {
+  display: flex;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 200, 0, 0.9);
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity ease-in-out 0.25s;
+  border-radius: 20px 20px 0 0;
+}
+#religious-buildings .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content {
+  font-size: 1.25rem;
+  color: white;
+}
+#religious-buildings .portfolio-item .portfolio-link:hover .portfolio-hover {
+  opacity: 1;
+}
+#religious-buildings .portfolio-item .portfolio-caption {
+  padding: 1rem;
+  text-align: center;
+  background-color: #fff;
+  border-radius: 0 0 20px 20px;
+}
+#religious-buildings .portfolio-item .portfolio-caption .portfolio-caption-heading {
+  font-size: 1.2rem;
+  font-family: 'Merriweather', 'serif';
+  font-weight: 700;
+  margin-bottom: 0;
+}
+#religious-buildings .portfolio-item .portfolio-caption .portfolio-caption-subheading {
+  font-family: 'Montserrat', 'sans serif';
+}
+
+
+
+#historicbuildings .portfolio-item {
+  max-width: 26rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+#historicbuildings .portfolio-item .portfolio-link {
+  position: relative;
+  display: block;
+  margin: 0 auto;
+}
+#historicbuildings .portfolio-item .portfolio-link .portfolio-hover {
+  display: flex;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 200, 0, 0.9);
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity ease-in-out 0.25s;
+  border-radius: 20px 20px 0 0;
+}
+#historicbuildings .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content {
+  font-size: 1.25rem;
+  color: white;
+}
+#historicbuildings .portfolio-item .portfolio-link:hover .portfolio-hover {
+  opacity: 1;
+}
+#historicbuildings .portfolio-item .portfolio-caption {
+  padding: 1rem;
+  text-align: center;
+  background-color: #fff;
+  border-radius: 0 0 20px 20px;
+}
+#historicbuildings .portfolio-item .portfolio-caption .portfolio-caption-heading {
+  font-size: 1.2rem;
+  font-family: 'Merriweather', 'serif';
+  font-weight: 700;
+  margin-bottom: 0;
+}
+#historicbuildings .portfolio-item .portfolio-caption .portfolio-caption-subheading {
+  font-family: 'Montserrat', 'sans serif';
+}
+
+
+
+#others .portfolio-item {
+  max-width: 26rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+#others .portfolio-item .portfolio-link {
+  position: relative;
+  display: block;
+  margin: 0 auto;
+}
+#others .portfolio-item .portfolio-link .portfolio-hover {
+  display: flex;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 200, 0, 0.9);
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity ease-in-out 0.25s;
+  border-radius: 20px 20px 0 0;
+}
+#others .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content {
+  font-size: 1.25rem;
+  color: white;
+}
+#others .portfolio-item .portfolio-link:hover .portfolio-hover {
+  opacity: 1;
+}
+#others .portfolio-item .portfolio-caption {
+  padding: 1rem;
+  text-align: center;
+  background-color: #fff;
+  border-radius: 0 0 20px 20px;
+}
+#others .portfolio-item .portfolio-caption .portfolio-caption-heading {
+  font-size: 1.2rem;
+  font-family: 'Merriweather', 'serif';
+  font-weight: 700;
+  margin-bottom: 0;
+}
+#others .portfolio-item .portfolio-caption .portfolio-caption-subheading {
+  font-family: 'Montserrat', 'sans serif';
+}
+
+
+
 
 .portfolio-modal .modal-dialog {
   margin: 1rem;
@@ -11534,6 +11902,7 @@ header.masthead .masthead-heading {
 .timeline {
   position: relative;
   padding: 0;
+  margin-top: 4rem;
   list-style: none;
 }
 .timeline:before {
@@ -11625,6 +11994,7 @@ header.masthead .masthead-heading {
 .timeline .timeline-body > ul,
 .timeline .timeline-body > p {
   margin-bottom: 0;
+  margin-top: 2rem;
 }
 
 @media (min-width: 768px) {
@@ -11684,7 +12054,7 @@ header.masthead .masthead-heading {
     min-height: 170px;
   }
   .timeline > li .timeline-panel {
-    padding: 0 20px 20px 100px;
+    padding: 0 20px 20px 200px;
   }
   .timeline > li .timeline-image {
     width: 170px;
@@ -11695,7 +12065,7 @@ header.masthead .masthead-heading {
     margin-top: 40px;
   }
   .timeline > li.timeline-inverted > .timeline-panel {
-    padding: 0 100px 20px 20px;
+    padding: 0 200px 20px 20px;
   }
 }
 .team-member {
@@ -11799,7 +12169,7 @@ section#contact form#contactForm :-ms-input-placeholder {
 
 @media (min-width: 62em) {
   .featurette-heading {
-    margin-top: 7rem;
+    margin-top: 2rem;
   }
 }
 .map-iframe {
@@ -12484,24 +12854,27 @@ section#contact form#contactForm :-ms-input-placeholder {
 }
 /*
 ------------------------- */
-/* Text Banner*/
 
+/* Text Banner*/
 .banner-text-heading {
   color:#ffffff;
   text-transform: uppercase;
 }
 
 .banner-heading-background {
-  background-color: #ED553B;
+  background-color: #20639B;
 }
 
 .banner-divider {
   color:#ffffff;
 }
 
-.banner-paragraph {
+.banner-paragraph-food {
   color:#ffffff;
+  margin-right: 19.5rem;
+  margin-left: 19.5rem;
 }
+/* Text Banner*/
 
 /* Add some styles to the carousel */
 #carouselExampleCaptions {
@@ -12579,6 +12952,34 @@ section#contact form#contactForm :-ms-input-placeholder {
   height: 100%;
 }
 
+/* Links inside the dropdown */
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
 
-/*  */
-/*  */
+/* Add a grey background color to dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* DROPDOWN MENU */
+@media all and (min-width: 992px) {
+	.navbar .dropdown-menu-end{ right:0; left: auto;  }
+	.navbar .nav-item .dropdown-menu{  display:block; opacity: 0;  visibility: hidden; transition:.3s; margin-top:0;  }
+	.navbar .nav-item:hover .nav-link{ color: #fff;  }
+	.navbar .dropdown-menu.fade-down{ top:80%; transform: rotateX(-75deg); transform-origin: 0% 0%; }
+	.navbar .dropdown-menu.fade-up{ top:180%;  }
+	.navbar .nav-item:hover .dropdown-menu{ transition: .3s; opacity:1; visibility:visible; top:100%; transform: rotateX(0deg); }
+}	
+/* DROPDOWN MENU */
+

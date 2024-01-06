@@ -20,6 +20,8 @@
         <link href="css/styles.css" rel="stylesheet" />
         <!-- ICONS -->
         <link href="https://fontawesome.com/">
+        <!-- ANIMATION -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     </head>
     <body id="page-top">
 
@@ -34,25 +36,70 @@
             Menu
                 <i class="fas fa-bars ms-1"></i>
             </button>
-                    <div class="collapse navbar-collapse" id="navbarResponsive">
-                        <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
-                            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-                            <li class="nav-item"><a class="nav-link" href="page-1.html">History</a></li>
-                            <li class="nav-item"><a class="nav-link active" href="page-2.html">Landmarks</a></li>
-                            <li class="nav-item"><a class="nav-link" href="page-3.html">Food</a></li>
-                            <li class="nav-item"><a class="nav-link" href="page-4.html">Things to know</a></li>
-                        </ul>
-                    </div>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Home
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">Item 1</a>
+                            <a class="dropdown-item" href="#">Item 2</a>
+                            <a class="dropdown-item" href="#">Item 3</a>
+                        </div>
+                    </li>
+    
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">History
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#firstsettlements">First Settlements</a>
+                            <a class="dropdown-item" href="#romanrule">Roman Rule</a>
+                            <a class="dropdown-item" href="#byzantineandbulgarianrule">Byzantine and Bulgarian Rule</a>
+                            <a class="dropdown-item" href="#ottomanrule">Ottoman Rule</a>
+                            <a class="dropdown-item" href="#sovietrule">Soviet Rule</a>
+                        </div>
+                    </li>
+                        
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown">LANDMARKS</a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="page-2.html#religiousbuildings">Religious Buildings</a>
+                            <a class="dropdown-item" href="page-2.html#historicsites">Historic Sites</a>
+                            <a class="dropdown-item" href="page-2.html#artgalleries">Galleries, Museums and Theatres</a>
+                        </div>
+                        </li>
+                    
+    
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="page-3.html" data-bs-toggle="dropdown">FOOD</a>
+                            <ul class="dropdown-menu fade-up">
+                              <li><a class="dropdown-item" href="#"> Submenu item 1</a></li>
+                              <li><a class="dropdown-item" href="#"> Submenu item 2 </a></li>
+                              <li><a class="dropdown-item" href="#"> Submenu item 3 </a></li>
+                            </ul>
+                        </li>
+                    
+                    
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="page-3.html" data-bs-toggle="dropdown">THINGS TO KNOW</a>
+                                <ul class="dropdown-menu fade-up">
+                                  <li><a class="dropdown-item" href="#"> Submenu item 1</a></li>
+                                  <li><a class="dropdown-item" href="#"> Submenu item 2 </a></li>
+                                  <li><a class="dropdown-item" href="#"> Submenu item 3 </a></li>
+                                </ul>
+                            </li>
+                </ul>
+            </div>
     </div>
 </nav>
 <!-- NAVIGATION -->
 
 
 <!-- MASTHEAD -->
-<header class="masthead">
+<header class="masthead-landmarks">
     <div class="container">
-        <div class="masthead-subheading"></div>
-            <div class="masthead-heading">LANDMARKS</div>
+        <div class="masthead-subheading-landmarks"></div>
+            <div class="masthead-heading-landmarks">LANDMARKS</div>
         </div>
 </header>
 
@@ -68,8 +115,8 @@
 <section class="page-section" id="services">
     <div class="container">
         <div class="text-center">
-            <h2 class="section-heading text-uppercase">Table of content</h2>               
-                <h3 class="section-subheading text-muted">Click one of the following to start your journey!</h3>
+            <h2 class="section-heading-landmarks text-uppercase">Table of content</h2>               
+                <h3 class="section-subheading-landmarks text-muted"></h3>
         </div>
                     <div class="row text-center">
                         <div class="col-md-4">
@@ -90,188 +137,211 @@
 
 <!-- IMAGES GALLERY -->
 <!-- GRID1 -->
-<section class="page-section" id="portfolio">
+<section class="page-section bg-light" id="religious-buildings">
     <div class="container">
         <div class="text-center">
-            <h2 class="section-heading text-uppercase">RELIGIOUS BUILDINGS</h2>
-                <h3 class="section-subheading text-muted">Sofia, Bulgaria, unfolds its history through landmarks like the Alexander Nevsky Cathedral, reflecting diverse influences. </h3>
+            <h2 class="section-heading text-uppercase" id="religiousbuildings">RELIGIOUS BUILDINGS</h2>
+                <h3 class="section-subheading text-muted"></h3>
         </div>
-                    <div class="row">
-                        <div class="col-lg-4 col-sm-6 mb-4">
+                    <div class="row justify-content-center">
+                        <!-- EMPTY COLUMN -->
+                        <div class="col-lg-1 col-sm-6 mb-4"></div>
+                        <!-- EMPTY COLUMN -->
+                        <div class="col-lg-3 col-sm-6 mb-4">
+
                         <!-- ITEM 1 -->
-                            <div class="portfolio-item">
-                                <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal1">
+                            <div class="portfolio-item tran animate__animated animate__fadeInUp" data-wow-delay="0.2s" style="visibility: visible; animation-delay: 1.0s;">
+                                <a class="portfolio-link" data-bs-toggle="modal">
                                     <div class="portfolio-hover">
-                                        <div class="portfolio-hover-content"><i class="fa-solid fa-church" height="5"></i></i></div>
+                                        <div class="portfolio-hover-content"><i class="fa-solid fa-church" style="font-size: 1.5em;"></i></i></div>
                                     </div>
                                             <img class="img-fluid" src="assets/img/landmarks-pictures/grid1/st-nevsky-cathedral.jpg" alt="A large building with a gold dome and a gold cross on top"/>
                                             <!-- PHOTO REFERENCE: https://unsplash.com/photos/green-and-blue-dome-building-under-blue-sky-during-daytime-OENyTAi9dg0?utm_content=creditShareLink&utm_medium=referral&utm_source=unsplash -->
                                 </a>
                                                 <div class="portfolio-caption">
                                                     <div class="portfolio-caption-heading">St. Nevsky Cathedral</div>
-                                                        <div class="portfolio-caption-subheading text-muted">Sofia</div>
+                                                        <div class="portfolio-caption-subheading text-muted"><i class="fa-solid fa-location-dot"></i> Sofia</div>
                                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-4 col-sm-6 mb-4">
+                        <div class="col-lg-3 col-sm-6 mb-4">
 
                         <!-- ITEM 2 -->
-                            <div class="portfolio-item">
-                                <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal2">
+                            <div class="portfolio-item tran animate__animated animate__fadeInUp" data-wow-delay="0.2s" style="visibility: visible; animation-delay: 1.4s;">
+                                <a class="portfolio-link" data-bs-toggle="modal" href="#historicsites">
                                     <div class="portfolio-hover">
-                                        <div class="portfolio-hover-content"><i class="fa-solid fa-church"></i></div>
+                                        <div class="portfolio-hover-content"><i class="fa-solid fa-church" style="font-size: 1.5em;"></i></div>
                                     </div>
                                             <img class="img-fluid" src="assets/img/landmarks-pictures/grid1/banya-bashi-mosque.jpg" alt="A large building with towers"/>
                                             <!-- PHOTO REFERENCE: https://www.pexels.com/photo/photo-of-beige-dome-building-during-daytime-2079666/ -->
                                 </a>
                                                 <div class="portfolio-caption">
                                                     <div class="portfolio-caption-heading">Banya Bashi Mosque</div>
-                                                        <div class="portfolio-caption-subheading text-muted">Sofia</div>
+                                                        <div class="portfolio-caption-subheading text-muted"><i class="fa-solid fa-location-dot"></i> Sofia</div>
                                                 </div>
                                     </div>
                             </div>
-                        <div class="col-lg-4 col-sm-6 mb-4">
+                        <div class="col-lg-3 col-sm-6 mb-4">
 
                         <!-- ITEM 3 -->
-                        <div class="portfolio-item">
+                        <div class="portfolio-item tran animate__animated animate__fadeInUp" data-wow-delay="0.2s" style="visibility: visible; animation-delay: 1.8s;">
                             <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal3">
                                 <div class="portfolio-hover">
-                                    <div class="portfolio-hover-content"><i class="fa-solid fa-church"></i></div>
+                                    <div class="portfolio-hover-content"><i class="fa-solid fa-church" style="font-size: 1.5em;"></i></div>
                                 </div>
                                         <img class="img-fluid" src="assets/img/landmarks-pictures/grid1/st-george-rotunda.jpg" alt="A building with a round roof and a stone structure"/>
                                         <!-- PHOTO REFERENCE: https://www.pexels.com/photo/saint-george-rotunda-in-sofia-15074414/ -->
                             </a>
                                             <div class="portfolio-caption">
                                                 <div class="portfolio-caption-heading">St George Rotunda</div>
-                                                    <div class="portfolio-caption-subheading text-muted">Sofia</div>
+                                                    <div class="portfolio-caption-subheading text-muted"><i class="fa-solid fa-location-dot"></i> Sofia</div>
                                             </div>
                                 </div>
                         </div>
-                        <div class="col-lg-4 col-sm-6 mb-4 mb-lg-0">
+
+                        <!-- EMPTY COLUMN -->
+                        <div class="col-lg-1 col-sm-6 mb-4"></div>
+                        <!-- EMPTY COLUMN -->
     </div>
 </section>
 
 <!-- GRID2 -->
-<section class="page-section bg-light" id="portfolio">
+<section class="page-section bg-light" id="historicbuildings">
     <div class="container">
         <div class="text-center">
-            <h2 class="section-heading text-uppercase">HISTORIC SITES AND MONUMENTS</h2>
-                <h3 class="section-subheading text-muted">Sofia's allure is heightened by iconic monuments, which weave a compelling narrative of Sofia's rich history and cultural legacy.</h3>
+            <h2 class="section-heading text-uppercase" id="historicsites">HISTORIC SITES AND MONUMENTS</h2>
+                <h3 class="section-subheading text-muted"></h3>
         </div>
-                    <div class="row">
-                        <div class="col-lg-4 col-sm-6 mb-4">
+                    <div class="row justify-content-center">
+                        <!-- EMPTY COLUMN -->
+                        <div class="col-lg-1 col-sm-6 mb-4"></div>
+                        <!-- EMPTY COLUMN -->
+
+                        <div class="col-lg-3 col-sm-6 mb-4">
 
                             <!-- ITEM 4 -->
-                                <div class="portfolio-item">
+                                <div class="portfolio-item tran animate__animated animate__fadeInUp" data-wow-delay="0.2s" style="visibility: visible; animation-delay: 2.2s;">
                                     <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal4">
                                         <div class="portfolio-hover">
-                                            <div class="portfolio-hover-content"><i class="fa-solid fa-monument"></i></div>
+                                            <div class="portfolio-hover-content"><i class="fa-solid fa-monument" style="font-size: 1.5em;"></i></div>
                                         </div>
                                             <img class="img-fluid" src="assets/img/landmarks-pictures/grid2/serdica-ruins.jpg" alt="..." />
                                             <!-- PHOTO REFERENCE: https://pixabay.com/photos/cyprus-kourion-ancient-site-2003382/ -->
                                     </a>
                                                 <div class="portfolio-caption">
-                                                    <div class="portfolio-caption-heading">Ancient Serdica Complex</div>
-                                                        <div class="portfolio-caption-subheading text-muted">Sofia</div>
+                                                    <div class="portfolio-caption-heading">Serdica Complex</div>
+                                                        <div class="portfolio-caption-subheading text-muted"><i class="fa-solid fa-location-dot"></i> Sofia</div>
                                                 </div>
                                         </div>
                                 </div>
-                                <div class="col-lg-4 col-sm-6 mb-4 mb-sm-0">
+                                <div class="col-lg-3 col-sm-6 mb-4">
 
                             <!-- ITEM 5 -->
-                                <div class="portfolio-item">
+                                <div class="portfolio-item tran animate__animated animate__fadeInUp" data-wow-delay="0.2s" style="visibility: visible; animation-delay: 2.6s;">
                                     <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal5">
                                         <div class="portfolio-hover">
-                                            <div class="portfolio-hover-content"><i class="fa-solid fa-monument"></i></div>
+                                            <div class="portfolio-hover-content"><i class="fa-solid fa-monument" style="font-size: 1.5em;"></i></div>
                                         </div>
                                             <img class="img-fluid" src="assets/img/landmarks-pictures/grid2/saint-sofia-statue.jpg" alt="A statue of a person holding a bird and a ring"/>
                                             <!-- PHOTO REFERENCE: https://pixabay.com/photos/bulgaria-sofia-sculpture-monument-2400026/ -->
                                     </a>
                                                 <div class="portfolio-caption">
                                                     <div class="portfolio-caption-heading">Saint Sofia Statue</div>
-                                                        <div class="portfolio-caption-subheading text-muted">Sofia</div>
+                                                        <div class="portfolio-caption-subheading text-muted"><i class="fa-solid fa-location-dot"></i> Sofia</div>
                                                 </div>
                                         </div>
                                 </div>
-                                <div class="col-lg-4 col-sm-6 mb-4 mb-sm-0">
+                                <div class="col-lg-3 col-sm-6 mb-4">
 
                                 <!-- ITEM 6 -->
-                                <div class="portfolio-item">
+                                <div class="portfolio-item tran animate__animated animate__fadeInUp" data-wow-delay="0.2s" style="visibility: visible; animation-delay: 3.0s;">
                                     <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal6">
                                         <div class="portfolio-hover">
-                                            <div class="portfolio-hover-content"><i class="fa-solid fa-monument"></i></div>
+                                            <div class="portfolio-hover-content"><i class="fa-solid fa-monument" style="font-size: 1.5em;"></i></div>
                                         </div>
                                                 <img class="img-fluid" src="assets/img/landmarks-pictures/grid2/tzar-liberator-monument.jpg" alt="A statue of a person on a horse" />
                                     </a>
                                                     <div class="portfolio-caption">
-                                                        <div class="portfolio-caption-heading">Tzar Liberator Monument</div>
-                                                            <div class="portfolio-caption-subheading text-muted">Sofia</div>
+                                                        <div class="portfolio-caption-heading">Tzar Monument</div>
+                                                            <div class="portfolio-caption-subheading text-muted"><i class="fa-solid fa-location-dot"></i> Sofia</div>
                                                     </div>
                                         </div>
                                 </div>
+
+                                <!-- EMPTY COLUMN -->
+                                <div class="col-lg-1 col-sm-6 mb-4"></div>
+                                <!-- EMPTY COLUMN -->
+
                     </div>
     </div>
 </section>
 
 <!-- GRID3 -->
-<section class="page-section" id="portfolio">
+<section class="page-section bg-light" id="others">
     <div class="container">
         <div class="text-center">
-            <h2 class="section-heading text-uppercase">ART GALLERIES, MUSEUMS AND THEATRES</h2>
-                <h3 class="section-subheading text-muted">Sofia's Cultural Canvas</h3>
+            <h2 class="section-heading text-uppercase" id="artgalleries" id="museums">ART GALLERIES, MUSEUMS AND THEATRES</h2>
+                <h3 class="section-subheading text-muted"></h3>
         </div>
-                    <div class="row">
-                        <div class="col-lg-4 col-sm-6 mb-4">
+                    <div class="row justify-content-center">
+                         <!-- EMPTY COLUMN -->
+                         <div class="col-lg-1 col-sm-6 mb-4"></div>
+                         <!-- EMPTY COLUMN -->
+                         
+                        <div class="col-lg-3 col-sm-6 mb-4">
 
                             <!-- ITEM 7 -->
-                                <div class="portfolio-item">
+                                <div class="portfolio-item tran animate__animated animate__fadeInUp" data-wow-delay="0.2s" style="visibility: visible; animation-delay: 3.4s;">
                                     <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal7">
                                         <div class="portfolio-hover">
-                                            <div class="portfolio-hover-content"><i class="fa-solid fa-building-columns"></i></div>
+                                            <div class="portfolio-hover-content"><i class="fa-solid fa-building-columns" style="font-size: 1.5em;"></i></div>
                                         </div>
                                             <img class="img-fluid" src="assets/img/landmarks-pictures/grid3/national-gallery.jpg" alt="A white building with columns and a dome"/>
                                             <!-- PHOTO REFERENCE: https://pixabay.com/photos/national-gallery-museum-travel-2533907/ -->
                                     </a>
                                                 <div class="portfolio-caption">
                                                     <div class="portfolio-caption-heading">National Art Gallery</div>
-                                                        <div class="portfolio-caption-subheading text-muted">Sofia</div>
+                                                        <div class="portfolio-caption-subheading text-muted"><i class="fa-solid fa-location-dot"></i> Sofia</div>
                                                 </div>
                                         </div>
                                 </div>
-                                <div class="col-lg-4 col-sm-6 mb-4 mb-sm-0">
+                                <div class="col-lg-3 col-sm-6 mb-4">
 
                             <!-- ITEM 8 -->
-                                <div class="portfolio-item">
+                                <div class="portfolio-item tran animate__animated animate__fadeInUp" data-wow-delay="0.2s" style="visibility: visible; animation-delay: 3.8s;">
                                     <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal8">
                                         <div class="portfolio-hover">
-                                            <div class="portfolio-hover-content"><i class="fa-solid fa-building-columns"></i></div>
+                                            <div class="portfolio-hover-content"><i class="fa-solid fa-building-columns" style="font-size: 1.5em;"></i></div>
                                         </div>
                                             <img class="img-fluid" src="assets/img/landmarks-pictures/grid3/sofia-history museum.jpg" alt="A building with a fountain and people in the foreground"/>
                                             <!-- PHOTO REFERENCE: https://unsplash.com/photos/a-large-building-with-a-fountain-in-front-of-it-MI--Rc6_UO4 -->
                                     </a>
                                                 <div class="portfolio-caption">
-                                                    <div class="portfolio-caption-heading">Sofia History Museum</div>
-                                                        <div class="portfolio-caption-subheading text-muted">Sofia</div>
+                                                    <div class="portfolio-caption-heading">History Museum</div>
+                                                        <div class="portfolio-caption-subheading text-muted"><i class="fa-solid fa-location-dot"></i> Sofia</div>
                                                 </div>
                                         </div>
                                 </div>
-                                <div class="col-lg-4 col-sm-6 mb-4 mb-sm-0">
+                                <div class="col-lg-3 col-sm-6 mb-4">
 
                                 <!-- ITEM 9 -->
-                                <div class="portfolio-item">
+                                <div class="portfolio-item tran animate__animated animate__fadeInUp" data-wow-delay="0.2s" style="visibility: visible; animation-delay: 4.2s;">
                                     <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal9">
                                         <div class="portfolio-hover">
-                                            <div class="portfolio-hover-content"><i class="fa-solid fa-building-columns"></i></div>
+                                            <div class="portfolio-hover-content"><i class="fa-solid fa-building-columns" style="font-size: 1.5em;"></i></div>
                                         </div>
                                                 <img class="img-fluid" src="assets/img/landmarks-pictures/grid3/ivan-vazov-national-theatre.jpg" alt="A building with columns and statues"/>
                                                 <!-- PHOTO REFERENCE: https://pixabay.com/photos/sofia-the-national-theater-898233/ -->
                                     </a>
                                                     <div class="portfolio-caption">
-                                                        <div class="portfolio-caption-heading">Vazov National Theatre</div>
-                                                            <div class="portfolio-caption-subheading text-muted">Sofia</div>
+                                                        <div class="portfolio-caption-heading">National Theatre</div>
+                                                            <div class="portfolio-caption-subheading text-muted"><i class="fa-solid fa-location-dot"></i> Sofia</div>
                                                     </div>
                                         </div>
                                 </div>
+                                <!-- EMPTY COLUMN -->
+                                <div class="col-lg-1 col-sm-6 mb-4"></div>
+                                <!-- EMPTY COLUMN -->
                     </div>
     </div>
 </section>
@@ -285,7 +355,7 @@
 
                         
 <!-- FOOTER -->
-<div class="container bg-light">
+<div class="container">
     <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 my-5 border-top">
         <div class="col mb-3">
             <a href="#" class="d-flex align-items-center mb-3 link-dark text-decoration-none">
@@ -323,9 +393,9 @@
         <div class="col mb-3">
             <h5>Landmarks</h5>
                 <ul class="nav flex-column">
-                    <li class="nav-item mb-2"><a href="file:///C:/Users/glori/OneDrive/Desktop/website/narrative-website/page-2.html#:~:text=Religious%20Buildings,city%27s%20unique%20tapestry." class="nav-link p-0 text-muted">Religious Buildings</a></li>
-                    <li class="nav-item mb-2"><a href="file:///C:/Users/glori/OneDrive/Desktop/website/narrative-website/page-2.html#:~:text=Historical%20Buildings,National%20Art%20Gallery." class="nav-link p-0 text-muted">Historical Buildings</a></li>
-                    <li class="nav-item mb-2"><a href="file:///C:/Users/glori/OneDrive/Desktop/website/narrative-website/page-2.html#:~:text=Museums%20and,Bulgaria%27s%20artistic%20journey." class="nav-link p-0 text-muted">Museum and Art Galleries</a></li>
+                    <li class="nav-item mb-2"><a href="#religiousbuilding" class="nav-link p-0 text-muted">Religious Buildings</a></li>
+                    <li class="nav-item mb-2"><a href="#historicbuildings" class="nav-link p-0 text-muted">Historic Sites and Monuments</a></li>
+                    <li class="nav-item mb-2"><a href="#others" class="nav-link p-0 text-muted">Art Galleries, Museums, and Theatres</a></li>
                     <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted"></a></li>
                     <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted"></a></li>
                 </ul>
@@ -333,243 +403,6 @@
     </footer>
 <!-- FOOTER -->
 
-
-        
-        
-        
-        
-    
-
-<!-- START OF CAROUSEL 1 -->
-<section class="page-section" id="team">
-    <div class="container">
-        <div class="text-center">
-            <h2 class="section-heading text-uppercase"></h2>
-            <h3 class="section-subheading text-muted"></h3>
-        </div>
-        <div class="row">
-            <div class="col-md-6">
-                <div class="jumbotron p-3" style="color: #474747;">
-                    <h1 class="display-4">Religious Buildings</h1>
-                    <p class="lead my-3">Sofia's skyline narrates a rich cultural tale through its diverse religious landmarks. From the iconic Alexander Nevsky Cathedral to the ancient St. Sofia Church and the Ottoman-inspired Banya Bashi Mosque, each structure contributes to the city's unique tapestry.</p>
-                </div>
-            </div>
-            <div class="col-md-6">
-                <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
-                    <div class="carousel-indicators">
-                        <button type="button" data-bs-target="#carouselExampleInterval" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                        <button type="button" data-bs-target="#carouselExampleInterval" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                        <button type="button" data-bs-target="#carouselExampleInterval" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                    </div>
-                    <div class="carousel-inner">
-                        <div class="carousel-item active" data-bs-interval="10000">
-                            <div class="image-wrapper position-relative">
-                                <img src="assets/img/landmarks-pictures/st-nevsky-cathedral.jpg" class="d-block w-100 img-fluid" alt="A large building with a gold dome">
-                                <div class="carousel-caption d-none d-md-block">
-                                    <h5>St. Nevsky Cathedral</h5>
-                                    <p></p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="carousel-item" data-bs-interval="2000">
-                            <div class="image-wrapper position-relative">
-                                <img src="assets/img/landmarks-pictures/banya-bashi-mosque.jpg" class="d-block w-100 img-fluid" alt="A large building with towers">
-                                <!-- PHOTO REFERENCES https://pixabay.com/photos/sofia-church-religion-orthodox-4542771/ -->
-                                    <div class="carousel-caption d-none d-md-block">
-                                        <h5>Banya Bashi Mosque</h5>
-                                            <p></p>
-                                    </div>
-                            </div>
-                        </div>
-                        <div class="carousel-item">
-                            <div class="image-wrapper position-relative">
-                                <img src="assets/img/landmarks-pictures/saint-george-rotunda-george.jpg" class="d-block w-100 img-fluid" alt="A building with a round roof and a stone structure">
-                                    <div class="carousel-caption d-none d-md-block">
-                                        <h5>St George Rotunda</h5>
-                                            <p></p>
-                                    </div>
-                            </div>
-                        </div>
-                    </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Previous</span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Next</span>
-                    </button>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-<!-- END OF CAROUSEL 1 -->
-
-
-
-<!-- START OF CAROUSEL 2 -->
-<section class="page-section" id="team">
-    <div class="container">
-        <div class="text-center">
-            <h2 class="section-heading text-uppercase"></h2>
-                <h3 class="section-subheading text-muted"></h3>
-        </div>
-                    <div class="row">
-                        <div class="col-md-6">
-                            <div id="carouselExampleInterval2" class="carousel slide" data-bs-ride="carousel">
-                                <div class="carousel-indicators">
-                                    <button type="button" data-bs-target="#carouselExampleInterval2" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                                    <button type="button" data-bs-target="#carouselExampleInterval2" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                                    <button type="button" data-bs-target="#carouselExampleInterval2" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                                </div>
-                                        <div class="carousel-inner">
-                                            <div class="carousel-item active" data-bs-interval="10000">
-                                                <div class="image-wrapper">
-                                                    <img src="assets/img/landmarks-pictures/statue-of-liberty-sofia.jpg" class="d-block w-100" alt="A statue of a person holding a bird">
-                                                </div>
-                                            </div>
-                                            <div class="carousel-item" data-bs-interval="2000">
-                                                <div class="image-wrapper">
-                                                    <img src="assets/img/landmarks-pictures/roman-sculpture-on-wall.jpg" class="d-block w-100" alt="A statue of a person in a robe">
-                                                </div>
-                                            </div>
-                                            <div class="carousel-item">
-                                                <div class="image-wrapper">
-                                                    <img src="assets/img/landmarks-pictures/soviet-army-monument.jpg" class="d-block w-100" alt="A statue of a person holding a flower and a person holding a rifle">
-                                                </div>
-                                            </div>
-                                        </div>
-                                                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval2" data-bs-slide="prev">
-                                                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                                            <span class="visually-hidden">Previous</span>
-                                                        </button>
-                                                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval2" data-bs-slide="next">
-                                                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                                            <span class="visually-hidden">Next</span>
-                                                        </button>
-                            </div>
-                        </div>
-                        <div class="col-md-6 px-0">
-                            <div class="jumbotron p-3" style="color: #474747;">
-                                <h1 class="display-4">Historical Buildings</h1>
-                                    <p class="lead my-3">Sofia's historical buildings embody a captivating fusion of tradition and modernity, offering a glimpse into the city's enduring legacy. Walk the city's streets to encounter the stately National Assembly, the Presidential Palace, and the transformed Royal Palace, now the National Art Gallery.</p>
-                            </div>
-                        </div>
-
-
-                       
-                    </div>
-    </div>
-</section>
-<!-- END OF CAROUSEL 2 -->
-
-
-<!-- START OF CAROUSEL 3 -->
-<section class="page-section" id="team">
-    <div class="container">
-        <div class="text-center">
-            <h2 class="section-heading text-uppercase"></h2>
-                <h3 class="section-subheading text-muted"></h3>
-        </div>
-                    <div class="row">
-                        <div class="col-md-6 px-0">
-                            <div class="jumbotron p-3" style="color: #474747;">
-                                <h1 class="display-4">Museums and</h1>
-                                <h1 class="display-4">Art Galleries</h1>
-                                    <p class="lead my-3">Sofia's cultural tapestry unfolds in its museums and art galleries. The National Palace of Culture buzzes with creativity, while the National Art Gallery and Sofia City Art Gallery provide insights into Bulgaria's artistic journey. </p>
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div id="carouselExampleInterval3" class="carousel slide" data-bs-ride="carousel">
-                                <div class="carousel-indicators">
-                                    <button type="button" data-bs-target="#carouselExampleInterval3" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                                    <button type="button" data-bs-target="#carouselExampleInterval3" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                                    <button type="button" data-bs-target="#carouselExampleInterval3" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                                </div>
-                                        <div class="carousel-inner">
-                                            <div class="carousel-item active" data-bs-interval="10000">
-                                                <div class="image-wrapper">
-                                                    <img src="assets/img/landmarks-pictures/national-history-museum.jpg" class="d-block w-100" alt="A large building with a dome and a statue in front of it">
-                                                </div>
-                                            </div>
-                                            <div class="carousel-item" data-bs-interval="2000">
-                                                <div class="image-wrapper">
-                                                    <img src="assets/img/landmarks-pictures/national-palace-culture.jpg" class="d-block w-100" alt="A large building with a clock on top">
-                                                </div>
-                                            </div>
-                                            <div class="carousel-item">
-                                                <div class="image-wrapper">
-                                                    <img src="assets/museum-of-science-and-industry-5119410_1280.jpg" class="d-block w-100" alt="A large white building with cherry blossoms and a pond in front of it">
-                                                </div>
-                                            </div>
-                                        </div>
-                                                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval3" data-bs-slide="prev">
-                                                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                                            <span class="visually-hidden">Previous</span>
-                                                        </button>
-                                                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval3" data-bs-slide="next">
-                                                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                                            <span class="visually-hidden">Next</span>
-                                                        </button>
-                            </div>
-                        </div>
-                    </div>
-    </div>
-</section>
-<!-- END OF CAROUSEL 3 -->
-
-
-       
-    
-<!-- FOOTER -->
-<div class="container bg-light">
-    <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 my-5 border-top">
-        <div class="col mb-3">
-            <a href="#" class="d-flex align-items-center mb-3 link-dark text-decoration-none">
-                <div class="divider-custom-icon"><i class="fas fa-star fa-lg"></i></div>
-            </a>
-                    <p class="text-muted">©UXplore</p><p>Designed with ♥ by me</p>
-        </div>
-
-
-        <div class="col mb-3">
-        </div>
-  
-        <div class="col mb-3">
-            <h5>About me</h5>
-                <ul class="nav flex-column">
-                    <li class="nav-item mb-2"><a href="#team" class="nav-link p-0 text-muted">My story</a></li>
-                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Privacy</a></li>
-                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Subscribe</a></li>
-                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
-                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Sitemap</a></li>
-                </ul>
-        </div>
-  
-        <div class="col mb-3">
-            <h5>History</h5>
-                <ul class="nav flex-column">
-                    <li class="nav-item mb-2"><a href="file:///C:/Users/glori/OneDrive/Desktop/website/narrative-website/page-1.html#:~:text=V%20millennium%20BCE-,Prehistory,-One%20of%20these" class="nav-link p-0 text-muted">Prehistory</a></li>
-                    <li class="nav-item mb-2"><a href="file:///C:/Users/glori/OneDrive/Desktop/website/narrative-website/page-1.html#:~:text=29%20BCE-,Roman%20Rule,-Around%2029%20BCE" class="nav-link p-0 text-muted">Roman Rule</a></li>
-                    <li class="nav-item mb-2"><a href="file:///C:/Users/glori/OneDrive/Desktop/website/narrative-website/page-1.html#:~:text=809%20CE-,Byzantine%20Empire,-During%20the%20reign" class="nav-link p-0 text-muted">Byzantine Empire</a></li>
-                    <li class="nav-item mb-2"><a href="file:///C:/Users/glori/OneDrive/Desktop/website/narrative-website/page-1.html#:~:text=1382%2D1878-,Ottomans%20Rule,-During%20the%20Ottoman" class="nav-link p-0 text-muted">Ottomans Rule</a></li>
-                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted"></a></li>
-                </ul>
-        </div>
-  
-        <div class="col mb-3">
-            <h5>Landmarks</h5>
-                <ul class="nav flex-column">
-                    <li class="nav-item mb-2"><a href="file:///C:/Users/glori/OneDrive/Desktop/website/narrative-website/page-2.html#:~:text=Religious%20Buildings,city%27s%20unique%20tapestry." class="nav-link p-0 text-muted">Religious Buildings</a></li>
-                    <li class="nav-item mb-2"><a href="file:///C:/Users/glori/OneDrive/Desktop/website/narrative-website/page-2.html#:~:text=Historical%20Buildings,National%20Art%20Gallery." class="nav-link p-0 text-muted">Historical Buildings</a></li>
-                    <li class="nav-item mb-2"><a href="file:///C:/Users/glori/OneDrive/Desktop/website/narrative-website/page-2.html#:~:text=Museums%20and,Bulgaria%27s%20artistic%20journey." class="nav-link p-0 text-muted">Museum and Art Galleries</a></li>
-                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted"></a></li>
-                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted"></a></li>
-                </ul>
-        </div>
-    </footer>
-<!-- FOOTER -->
 
 
 
@@ -694,7 +527,7 @@
                                     <div class="modal-body">
 
                                     <!-- PROJECT DETAILS -->
-                                        <h2 class="text-uppercase">Ancient Serdica Complex</h2>
+                                        <h2 class="text-uppercase">Serdica Complex</h2>
                                             <p class="item-intro text-muted"> Thracian tribe Serdi</p>
                                                 <p>The Thracian Serdi tribe founded Serdika 2,000 years ago BC. Under Roman rule, Serdika developed into Ulpia Serdika, which Emperor Constantine the Great favoured as his own Rome. Beneath Sofia's Presidential underpass lay the remnants of this strategically important city, once defended by high walls and studded with opulent palaces. Serdika's rich past is reflected in its mediaeval alleys and intact eastern gate, which were designated as historical and archaeological reserves in 1976.</p>
                                                 <!-- TEXT REFERENCES https://bulgariatravel.org/serdika-ancient-fortress-sofia-city/ -->
@@ -769,7 +602,7 @@
                                     <div class="modal-body">
 
                                     <!-- PROJECT DETAILS -->
-                                        <h2 class="text-uppercase">Tzar Liberator Monument</h2>
+                                        <h2 class="text-uppercase">Tzar Monument</h2>
                                             <p class="item-intro text-muted">Arnoldo Zocchi</p>
                                                 <p>The Tsar Liberator Monument, a 12-meter-tall neoclassical homage to Russian Emperor Alexander II, is located in Sofia's National Assembly Square. It was built in 1907 by Italian artist Arnoldo Zocchi as a sign of appreciation for Alexander II's assistance in freeing Bulgaria from Ottoman domination. The monument, which is made of polished black granite, shows the goddess Nike/Victoria leading a group of Russian and Bulgarian soldiers. Generals Gourko and Skobelev are surrounded by Grand Duke Nicholas Nicolaievich. Launched following the Russo-Turkish war, this cultural gem carries a sense of historical significance as it embodies a crucial period in Sofia's history.</p>
                                                 <!-- TEXT REFERENCES https://bulgaria-infoguide.com/sofia/tsar-liberator-monument/ -->
@@ -844,7 +677,7 @@
                             <div class="modal-body">
 
                             <!-- PROJECT DETAILS -->
-                                <h2 class="text-uppercase">Sofia History Museum</h2>
+                                <h2 class="text-uppercase">History Museum</h2>
                                     <p class="item-intro text-muted">Petko Momchilov</p>
                                         <p>The Central Mineral Baths building now houses the Sofia History Museum, which is focused on the economy, culture, ethnography, and life in Sofia and its environs. The museum's collection, which includes the Research Library and Photo Archives, totals about 120,000 items and spans the time from the sixth millennium BC to the 1940s. Eight thematic rooms showcasing the collection are: Antiquity, The Strength of the Spirit, Links with European Dynasties, A Sofia Street, State and Municipal Institutions, Sofia Home and Clothes, Culture and Recreation. In two other rooms, the Sofia History Museum hosts temporary exhibitions as well.</p>
                                         <!-- TEXT REFERENCES https://whichmuseum.co.uk/museum/sofia-history-museum-7683 -->
@@ -881,7 +714,7 @@
                             <div class="modal-body">
 
                             <!-- PROJECT DETAILS -->
-                                <h2 class="text-uppercase">Vazov National Theatre</h2>
+                                <h2 class="text-uppercase">National Theatre</h2>
                                     <p class="item-intro text-muted">Ferdinand Fellner and Hermann Helmer</p>
                                         <p>The oldest and most prestigious theatre in Bulgaria is the "Ivan Vazov" National Theatre, which has a long history deeply ingrained in tradition while still making a major contribution to modernity. With a wide range of plays from modern to classical, the theatre appeals to a wide audience. It welcomes artistic endeavours that are original and places a significant emphasis on fostering national playwriting. The Art Nouveau-styled theatre, designed by Ferdinand Fellner and Hermann Helmer, is still recognisable in Sofia even after it was completed in 1906. The theatre, which has 848 seats, was inaugurated on January 3, 1907, and is adorned with magnificent artwork by Rudolf Fuchs, a Viennese artist.</p>
                                         <!-- TEXT REFERENCES https://nationaltheatre.bg/en/about-us/history -->
@@ -911,5 +744,6 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
         <!-- Core theme JS-->
         <script src="js/scripts.js"></script>
+        <!-- -->
     </body>
 </html>

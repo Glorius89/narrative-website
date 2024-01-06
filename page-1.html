@@ -18,240 +18,114 @@
         <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css" />
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
+        <!-- CSS ANIMATION -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     </head>
     <body id="page-top">
 
 
-
+ 
 
  <!-- NAVIGATION -->
  <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
     <div class="container">
         <a class="navbar-brand" href="index.html"><img src="assets/img/navbar-logo.svg" alt="..." /></a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
             Menu
-                <i class="fas fa-bars ms-1"></i>
-            </button>
-                    <div class="collapse navbar-collapse" id="navbarResponsive">
-                        <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
-                            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-                            <li class="nav-item"><a class="nav-link active" href="page-1.html">History</a></li>
-                            <li class="nav-item"><a class="nav-link" href="page-2.html">Landmarks</a></li>
-                            <li class="nav-item"><a class="nav-link" href="page-3.html">Food</a></li>
-                            <li class="nav-item"><a class="nav-link" href="page-4.html">Things to know</a></li>
-                        </ul>
+            <i class="fas fa-bars ms-1"></i>
+        </button>
+        
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Home
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#"></a>
+                        <a class="dropdown-item" href="#"></a>
+                        <a class="dropdown-item" href="#"></a>
+                        <a class="dropdown-item" href="#"></a>
+                        <a class="dropdown-item" href="#"></a>
                     </div>
+                </li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="page-1.html">History</a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#firstsettlements">First Settlements</a>
+                        <a class="dropdown-item" href="#romanrule">Roman Rule</a>
+                        <a class="dropdown-item" href="#byzantineandbulgarianrule">Byzantine and Bulgarian Rule</a>
+                        <a class="dropdown-item" href="#ottomanrule">Ottoman Rule</a>
+                        <a class="dropdown-item" href="#sovietrule">Soviet Rule</a>
+                    </div>
+                </li>
+                    
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown">LANDMARKS</a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="page-2.html#religiousbuildings">Religious Buildings</a>
+                        <a class="dropdown-item" href="page-2.html#historicsites">Historic Sites</a>
+                        <a class="dropdown-item" href="page-2.html#artgalleries">Galleries, Museums and Theatres</a>
+                    </div>
+                    </li>
+                
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="page-3.html" data-bs-toggle="dropdown">  FOOD</a>
+                        <ul class="dropdown-menu fade-up">
+                          <li><a class="dropdown-item" href="#"> Submenu item 1</a></li>
+                          <li><a class="dropdown-item" href="#"> Submenu item 2 </a></li>
+                          <li><a class="dropdown-item" href="#"> Submenu item 3 </a></li>
+                        </ul>
+                    </li>
+                
+                
+                <li class="nav-item"><a class="nav-link" href="page-4.html">Things to know</a></li>
+            </ul>
+        </div>
     </div>
 </nav>
 <!-- NAVIGATION -->
 
 
 <!-- MASTHEAD -->
-<header class="masthead">
+<header class="masthead-history">
     <div class="container">
-        <div class="masthead-subheading">Welcome to</div>
-            <div class="masthead-heading">SOFIA</div>
+        <div class="masthead-subheading-history"></div>
+            <div class="masthead-heading-history">HISTORY</div>
         </div>
 </header>
-
-<div class="publication">
-    <div class="publication-date text-center">Posted by Gloria Solinas on December 12, 2023</div> 
-</div>
 <!-- MASTHEAD -->
 
-
-<!-- TABLE OF CONTENT -->
-<section class="page-section" id="services">
-    <div class="container">
-        <div class="text-center">
-            <h2 class="section-heading text-uppercase">Table of content</h2>               
-                <h3 class="section-subheading text-muted">Click one of the following to start your journey!</h3>
+<!-- BANNER -->
+<section class="page-timeline banner-heading-background">
+    <div class="container px-4 px-lg-5">
+        <div class="row gx-4 gx-lg-5 justify-content-center">
+            <div class="col-lg-8 text-center">
+                <h2 class="banner-text-heading mt-4">A journey into the past</h2>
+                <hr class="divider banner-divider"/>
+                <p class="banner-paragraph mb-4">The city's origins trace back thousands of years, with evidence of human settlement in the region dating as far back as the Neolithic period</p>
+            </div>
         </div>
-                    <div class="row text-center">
-                        <div class="col-md-3">
-                            <a class="btn btn-primary btn-xl text-uppercase" href="file:///C:/Users/glori/OneDrive/Desktop/website/narrative-website/page-1.html">History</a>              
-                        </div>
-                        <div class="col-md-3">
-                         <a class="btn btn-primary btn-xl text-uppercase" href="file:///C:/Users/glori/OneDrive/Desktop/website/narrative-website/page-2.html">Landmarks</a> 
-                        </div>
-                        <div class="col-md-3">                     
-                            <a class="btn btn-primary btn-xl text-uppercase" href="file:///C:/Users/glori/OneDrive/Desktop/website/narrative-website/page-3.html">Food</a> 
-                        </div>
-                        <div class="col-md-3">
-                            <a class="btn btn-primary btn-xl text-uppercase" href="file:///C:/Users/glori/OneDrive/Desktop/website/narrative-website/page-4.html">Others</a>              
-                        </div>
-                    </div>
     </div>
 </section>
-<!-- TABLE OF CONTENT -->
-
-
-
-        <!-- Portfolio Grid-->
-        <section class="page-section bg-light" id="portfolio">
-            <div class="container">
-                <div class="text-center">
-                    <h2 class="section-heading text-uppercase">Gallery / Portfolio Example</h2>
-                    <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
-                </div>
-                <div class="row">
-                    <div class="col-lg-4 col-sm-6 mb-4">
-                        <!-- Portfolio item 1-->
-                        <div class="portfolio-item">
-                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal1">
-                                <div class="portfolio-hover">
-                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
-                                </div>
-                                <img class="img-fluid" src="assets/history.jpg" alt="..." />
-                            </a>
-                            <div class="portfolio-caption">
-                                <div class="portfolio-caption-heading">History</div>
-                                <div class="portfolio-caption-subheading text-muted">Illustration</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-sm-6 mb-4">
-                        <!-- Portfolio item 2-->
-                        <div class="portfolio-item">
-                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal2">
-                                <div class="portfolio-hover">
-                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
-                                </div>
-                                <img class="img-fluid" src="assets/history.jpg" alt="..." />
-                            </a>
-                            <div class="portfolio-caption">
-                                <div class="portfolio-caption-heading">Explore</div>
-                                <div class="portfolio-caption-subheading text-muted">Graphic Design</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-sm-6 mb-4">
-                        <!-- Portfolio item 3-->
-                        <div class="portfolio-item">
-                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal3">
-                                <div class="portfolio-hover">
-                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
-                                </div>
-                                <img class="img-fluid" src="assets/history.jpg" alt="..." />
-                            </a>
-                            <div class="portfolio-caption">
-                                <div class="portfolio-caption-heading">Finish</div>
-                                <div class="portfolio-caption-subheading text-muted">Identity</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-sm-6 mb-4 mb-lg-0">
-                        <!-- Portfolio item 4-->
-                        <div class="portfolio-item">
-                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal4">
-                                <div class="portfolio-hover">
-                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
-                                </div>
-                                <img class="img-fluid" src="assets/history.jpg" alt="..." />
-                            </a>
-                            <div class="portfolio-caption">
-                                <div class="portfolio-caption-heading">Lines</div>
-                                <div class="portfolio-caption-subheading text-muted">Branding</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-sm-6 mb-4 mb-sm-0">
-                        <!-- Portfolio item 5-->
-                        <div class="portfolio-item">
-                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal5">
-                                <div class="portfolio-hover">
-                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
-                                </div>
-                                <img class="img-fluid" src="assets/history.jpg" alt="..." />
-                            </a>
-                            <div class="portfolio-caption">
-                                <div class="portfolio-caption-heading">Southwest</div>
-                                <div class="portfolio-caption-subheading text-muted">Website Design</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-sm-6">
-                        <!-- Portfolio item 6-->
-                        <div class="portfolio-item">
-                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal6">
-                                <div class="portfolio-hover">
-                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
-                                </div>
-                                <img class="img-fluid" src="assets/history.jpg" alt="..." />
-                            </a>
-                            <div class="portfolio-caption">
-                                <div class="portfolio-caption-heading">Window</div>
-                                <div class="portfolio-caption-subheading text-muted">Photography</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-
-
-        <!-- Team-->
-        <section class="page-section bg-light" id="team">
-            <div class="container">
-                <div class="text-center">
-                    <h2 class="section-heading text-uppercase">Team</h2>
-                    <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
-                </div>
-                <div class="row">
-                    <div class="col-lg-4">
-                        <div class="team-member">
-                            <img class="mx-auto rounded-circle" src="assets/img/team/1.jpg" alt="..." />
-                            <h4>Title</h4>
-                            <p class="text-muted">Text</p>
-                        </div>
-                    </div>
-                    <div class="col-lg-4">
-                        <div class="team-member">
-                            <img class="mx-auto rounded-circle" src="assets/img/team/2.jpg" alt="..." />
-                            <h4>Title</h4>
-                            <p class="text-muted">Text</p>
-                        </div>
-                    </div>
-                    <div class="col-lg-4">
-                        <div class="team-member">
-                            <img class="mx-auto rounded-circle" src="assets/img/team/3.jpg" alt="..." />
-                            <h4>Title</h4>
-                            <p class="text-muted">Text</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-lg-8 mx-auto text-center"><p class="large text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque, laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut unde.</p></div>
-                </div>
-            </div>
-        </section>
+<!-- BANNER -->
 
 
 
         <!-- About-->
-        <section class="timeline-intro">
-            <div class="container">
-                <div class="subsection-tile text-center">Posted by Gloria Solinas on December 12, 2023</div>             
-                <h3 class="section-subheading-landmarks"></h3>
-            </div>
-            </section>
-
             <section class="page-timeline">
                 <ul class="timeline">
                     <li>
-                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/timeline/prehistory-7.jpg" alt="Ancient Stone Building"/></div>
-                            <div class="timeline-panel">
+                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/timeline/prehistoric-building.jpg" alt="A massive stone structure stands alone in a vast field"/></div>
+                            <div class="timeline-panel tran animate__animated animate__slideInLeft" data-wow-delay="0.2s" style="visibility: visible; animation-delay: 0.8s;" id="firstsettlements">
                                 <div class="timeline-heading">
-                                <h4>VI-V millennium BCE</h4>
-                                <h4 class="subheading low-highlight">Prehistory</h4>
+                                <h4 style="font-size:1.2rem">VI-V BCE</h4>
+                                <h4 class="subheading low-highlight">First settlements</h4>
                                 </div>
-                            <div class="timeline-body"><p class="text">
-                            <div id="module" class="container">
-                                <p class="collapse" id="collapseExample" aria-expanded="false">
-                                One of these settlements can still be seen in the Sofia History Museum. Prehistoric people decided to settle in today's territory of Sofia attracted by its hot mineral springs.</p>
-                                <a role="button" class="collapsed" data-toggle="collapse" href="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
-                                </a>
+                                <div class="timeline-body"><p class="text-muted">The history of Sofia was significantly influenced by the existence of hot mineral springs. The initial settlements in the contemporary Sofia region were established by prehistoric people who were attracted by the geological features of the area. In the 8th century BCE, the Thracian tribe of Serdi settled in the region before becoming part of the Roman Empire.</p></div>
+                                <!-- Reference: https://theculturetrip.com/europe/bulgaria/articles/12-moments-in-history-that-shaped-sofia-bulgaria -->
                             </div>
                               
                             <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
@@ -262,35 +136,54 @@
                     </li>
 
                     <li class="timeline-inverted">
-                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/timeline/romans-soldiers-6.jpg" alt="Roman Army" /></div>
-                        <div class="timeline-panel">
+                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/timeline/romans.jpg" alt="A group of Roman soldiers ready for battle"/></div>
+                        <div class="timeline-panel animate__animated animate__slideInRight" data-wow-delay="0.2s" style="visibility: visible; animation-delay: 0.12s;" id="romanrule">
                             <div class="timeline-heading">
-                                <h4>29 BCE</h4>
+                                <h4 style="font-size:1.2rem">29 BCE</h4>
                                 <h4 class="subheading low-highlight">Roman Rule</h4>
                             </div>
                             <div class="timeline-body"><p class="text">
-                                <div class="timeline-body"><p class="text">Around 29 BCE, Sofia became part of the Roman Empire. During this time, the city expanded and several buildings were erected, such as public baths, basilicas, and amphitheaters.</p></div>
+                                <div class="timeline-body"><p class="text-muted">The Romans conquered Sofia around 29 BCE, renaming the city 'Serdica'. In the 2nd century AD, the first Roman baths were built around the main hot spring. Today, Sofia proudly presents its rich historical legacy by providing residents and visitors free access to hot mineral water in the city centre.
+                                </p></div>
+                                <!-- Reference: https://theculturetrip.com/europe/bulgaria/articles/12-moments-in-history-that-shaped-sofia-bulgaria -->
                         </div>
                     </li>
 
                     <li>
-                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/timeline/monument-of-libery-2.jpg" alt="Statue of Liberty" /></div>
-                        <div class="timeline-panel">
+                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/timeline/monument-of-liberty.jpg" alt="A statue of a woman triumphantly raising a sword in the air, symbolizing strength and power"/></div>
+                        <div class="timeline-panel tran animate__animated animate__slideInLeft" data-wow-delay="0.2s" style="visibility: visible; animation-delay: 0.16s;" id="byzantineandbulgarianrule">
                             <div class="timeline-heading">
-                                <h4>809 CE<h4>
-                                <h4 class="subheading low-highlight">Byzantine Empire</h4>
+                                <h4 style="font-size:1.2rem">809 CE<h4>
+                                <h4 class="subheading low-highlight">Byzantine and Bulgarian Rule</h4>
                             </div>
-                            <div class="timeline-body"><p class="text-muted">During the reign of Khan Krum, Sofia was incorporated into the First Bulgarian Empire and changed name to Sredets.</p></div>
+                            <div class="timeline-body"><p class="text-muted">The city later passed to Byzantium after the decline of Rome, ravaged by Attila and the Huns in 441–447. In 809, Bulgarian Khan Krum integrated Sofia into the Bulgarian state, assigning it the Slavic name Sredets. The city remained under Byzantine rule from 1018 until 1185, when the second Bulgarian Empire was established.</p></div>
+                            <!-- Reference: https://theculturetrip.com/europe/bulgaria/articles/12-moments-in-history-that-shaped-sofia-bulgaria -->
+                            <!-- Reference: https://www.britannica.com/place/Sofia -->
                         </div>
                     </li>
+
                     <li class="timeline-inverted">
-                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/timeline/turkish-empire.jpg" alt="Turkish Mosque" /></div>
-                        <div class="timeline-panel">
+                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/timeline/turkish-mosque.jpg" alt="A Turkish mosque with towers"/></div>
+                        <div class="timeline-panel tran animate__animated animate__slideInRight" data-wow-delay="0.2s" style="visibility: visible; animation-delay: 0.20s;" id="ottomanrule">
                             <div class="timeline-heading">
-                                <h4>1382-1878</h4>
-                                <h4 class="subheading low-highlight">Ottomans Rule</h4>
+                                <h4 style="font-size:1.2rem">1382-1878 CE</h4>
+                                <h4 class="subheading low-highlight">Ottoman Rule</h4>
                             </div>
-                            <div class="timeline-body"><p class="text-muted">During the Ottoman-Bulgarian War, the city fell to the Turks. Under the Ottomans, mosques and its minarets dominated the skyline giving the city a distinctive Oriental appearance.</p></div>
+                            <div class="timeline-body"><p class="text-muted">During the Ottoman-Bulgarian War, the city succumbed to the Turks, leading to a period of Ottoman rule. Under their dominion, mosques and minarets dominated the skyline, giving a distinct Oriental character to the city. However, the situation changed when Bulgaria was liberated from Ottoman control following the Russo-Turkish Wars (1877-78). A year after liberation, Sofia was designated as the capital of the new country, sparking rapid growth as it transitioned from a provincial town to a bustling European capital. </p></div>
+                            <!-- Reference: https://theculturetrip.com/europe/bulgaria/articles/12-moments-in-history-that-shaped-sofia-bulgaria -->
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/timeline/soviet-union.jpg" alt="A red flag with the communist symbol"/></div>
+                        <div class="timeline-panel tran animate__animated animate__slideInLeft" data-wow-delay="0.2s" style="visibility: visible; animation-delay: 0.24s;" id="sovietrule">
+                            <div class="timeline-heading">
+                                <h4 style="font-size:1.2rem">1945-1990 CE<h4>
+                                <h4 class="subheading low-highlight">Soviet Rule</h4>
+                            </div>
+                            <div class="timeline-body"><p class="text-muted">After the Communist party took power, extensive construction projects reshaped Sofia following heavy bombing during WWII. The city was embellished with imposing buildings and Communist monuments. The Communist era ended on November 10, 1989, marking a turning point. Despite facing challenges in the 1990s, Sofia underwent a remarkable transformation into a modern European city, particularly following Bulgaria's accession to the European Union in 2007.</p></div>
+                            <!-- Text Reference: https://theculturetrip.com/europe/bulgaria/articles/12-moments-in-history-that-shaped-sofia-bulgaria -->
+                            <!-- Photo Reference:  -->
                         </div>
                     </li>
                 </ul>
@@ -299,7 +192,7 @@
 
 
 <!-- FOOTER -->
-<div class="container bg-light">
+<div class="container-footer bg-light">
     <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 my-5 border-top">
         <div class="col mb-3">
             <a href="#" class="d-flex align-items-center mb-3 link-dark text-decoration-none">
