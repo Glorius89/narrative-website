@@ -90,8 +90,8 @@ body {
 }
 
 hr {
-  margin-right: 30rem;
-  margin-left: 30rem;
+  margin-right: 33rem;
+  margin-left: 33rem;
   color: inherit;
   background-color: currentColor;
   border: 0;
@@ -104,6 +104,14 @@ hr .divider-food .banner-divider-food {
   background-color: currentColor;
   border: 0;
   opacity: 0.75;
+}
+
+.banner-divider-landmarks {
+  color:#ffffff;
+}
+
+.banner-divider-landmarks-grids {
+  color:#ffffff;
 }
 
 .banner-divider-food {
@@ -662,6 +670,17 @@ progress {
   margin-right: auto;
   margin-left: auto;
 }
+
+.container-imagegallery {
+  width: 100%;
+  padding-right: var(--bs-gutter-x, 0.75rem);
+  padding-left: var(--bs-gutter-x, 0.75rem);
+  padding-top: 5rem;
+  padding-bottom: 3rem;
+  margin-right: auto;
+  margin-left: auto;
+}
+
 
 @media (min-width: 576px) {
   .container-sm, .container {
@@ -7912,6 +7931,16 @@ textarea.form-control-lg {
   background-color: rgba(var(--bs-white-rgb), var(--bs-bg-opacity)) !important;
 }
 
+.bg-lightblue {
+  --bs-bg-opacity: 1;
+  background-color: #d7e3f9 !important;
+}
+
+.bg-darkblue {
+  --bs-bg-opacity: 1;
+  background-color: #ABC4F2 !important;
+}
+
 .bg-body {
   --bs-bg-opacity: 1;
   background-color: rgba(var(--bs-body-bg-rgb), var(--bs-bg-opacity)) !important;
@@ -11359,6 +11388,7 @@ p {
 .page-section {
   padding: 6rem 0;
 }
+
 .page-section h2.section-heading, .page-section .section-heading.h2 {
   font-size: 2.5rem;
   margin-top: 0;
@@ -11371,7 +11401,7 @@ p {
   margin-bottom: 4rem;
 }
 
-/* Timeline Section */
+/* TIMELINE SECTION */
 .page-timeline {
   padding-top: 2rem;
   padding-bottom: 2rem;
@@ -11386,7 +11416,7 @@ p {
   font-weight: 400;
   font-family: 'Montserrat', 'sans serif';
 }
-/* Timeline Section */
+/* TIMELINE SECTION */
 
 @media (min-width: 768px) {
   section {
@@ -11478,12 +11508,15 @@ p {
     margin-right: 0;
   }
 }
+
+/* HOMEPAGE SECTION */
 header.masthead {
   padding-top: 10.5rem;
   padding-bottom: 6rem;
   text-align: center;
   color: #fff;
-  background-image: url("../assets/new-background2.jpg");
+  background-image: url("../assets/img/background/homepage.jpg");
+  /* Source:  */
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-position: center center;
@@ -11491,39 +11524,41 @@ header.masthead {
 }
 
 header.masthead .masthead-subheading {
-  font-size: 1.5rem;
+  font-size: 1rem;
   line-height: 1.5rem;
   margin-bottom: 25px;
   font-family: 'Montserrat', 'sans serif';
 }
+
 header.masthead .masthead-heading {
   font-size: 3.25rem;
   font-weight: 700;
   line-height: 3.25rem;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
   font-family: 'Montserrat', 'sans serif';
 }
 
 @media (min-width: 768px) {
   header.masthead {
-    padding-top: 17rem;
+    padding-top: 12rem;
     padding-bottom: 12.5rem;
-  }
+}
   
-  header.masthead .masthead-subheading {
-    font-size: 2.25rem;
+header.masthead .masthead-subheading {
+    font-size: 1rem;
     line-height: 2.25rem;
-    margin-bottom: 2rem;
-  }
-  header.masthead .masthead-heading {
-    font-size: 4.5rem;
-    font-weight: 700;
-    line-height: 4.5rem;
-    margin-bottom: 4rem;
-  }
+    margin-bottom: 1rem;
 }
 
-/* History Section */
+header.masthead .masthead-heading {
+    font-size: 6rem;
+    font-weight: 500;
+    line-height: 4.5rem;
+}
+}
+/* HOMEPAGE SECTION */
+
+/* HISTORY SECTION */
 header.masthead-history {
     padding-top: 10.5rem;
     padding-bottom: 6rem;
@@ -11558,28 +11593,29 @@ header.masthead-history .masthead-heading-history {
       padding-bottom: 12.5rem;
 }
     
-header.masthead .masthead-subheading-history {
+header.masthead-history .masthead-subheading-history {
       font-size: 2.25rem;
       line-height: 2.25rem;
       margin-bottom: 2rem;
 }
 
-header.masthead .masthead-heading-history {
+header.masthead-history .masthead-heading-history {
       font-size: 4.5rem;
       font-weight: 700;
       line-height: 4.5rem;
       margin-bottom: 4rem;
   }
 }
-/* History Section */
+/* HISTORY SECTION */
 
-/* Landmarks Section */
+/* LANDMARKS SECTION */
 header.masthead-landmarks {
   padding-top: 10.5rem;
   padding-bottom: 6rem;
   text-align: center;
   color: #fff;
   background-image: url("../assets/img/background/landmarks.jpg");
+  /* Source:  https://unsplash.com/photos/statue-of-man-on-top-of-building-Z3_P1Vur_-s*/
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-position: center center;
@@ -11587,40 +11623,39 @@ header.masthead-landmarks {
 }
 
 header.masthead-landmarks .masthead-subheading-landmarks {
-  font-size: 1.5rem;
+  font-size: 1rem;
   line-height: 1.5rem;
   margin-bottom: 25px;
-  font-family: 'Merriweather', serif;
+  font-family: 'Montserrat', 'sans serif';
 }
 
 header.masthead-landmarks .masthead-heading-landmarks {
   font-size: 3.25rem;
   font-weight: 700;
   line-height: 3.25rem;
-  margin-bottom: 2rem;
-  font-family: 'Merriweather', serif;
+  margin-bottom: 1rem;
+  font-family: 'Montserrat', 'sans serif';
 }
 
 @media (min-width: 768px) {
   header.masthead-landmarks {
-    padding-top: 17rem;
+    padding-top: 12rem;
     padding-bottom: 12.5rem;
 }
   
 header.masthead-landmarks .masthead-subheading-landmarks {
-    font-size: 2.25rem;
+    font-size: 1rem;
     line-height: 2.25rem;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
 }
 
 header.masthead-landmarks .masthead-heading-landmarks {
-    font-size: 4.5rem;
-    font-weight: 700;
+    font-size: 6rem;
+    font-weight: 500;
     line-height: 4.5rem;
-    margin-bottom: 4rem;
 }
 }
-/* Landmarks Section */
+/* LANDMARKS SECTION */
 
 /* FOOD SECTION */
 header.masthead-food {
@@ -11628,7 +11663,7 @@ header.masthead-food {
   padding-bottom: 6rem;
   text-align: center;
   color: #fff;
-  background-image: url("../assets/img/background/Untitled\ design\ \(1\).jpg");
+  background-image: url("../assets/img/background/food.jpg");
   /* Source: https://www.pexels.com/photo/delicious-acai-smoothie-bowl-in-close-up-photography-4099236/ */
   background-repeat: no-repeat;
   background-attachment: scroll;
@@ -12869,10 +12904,25 @@ section#contact form#contactForm :-ms-input-placeholder {
   color:#ffffff;
 }
 
+.banner-paragraph {
+  color:#ffffff;
+  margin-right: 19.5rem;
+  margin-left: 19.5rem;
+  margin-top: 1rem;
+}
+
+.banner-paragraph-landmarks {
+  color:#ffffff;
+  margin-right: 19.5rem;
+  margin-left: 19.5rem;
+  margin-top: 1rem;
+}
+
 .banner-paragraph-food {
   color:#ffffff;
   margin-right: 19.5rem;
   margin-left: 19.5rem;
+  margin-top: 1rem;
 }
 /* Text Banner*/
 
@@ -12983,3 +13033,262 @@ section#contact form#contactForm :-ms-input-placeholder {
 }	
 /* DROPDOWN MENU */
 
+/* SUBSCRIPTION */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.newsletter {
+    background-color: #9C27B0;
+    padding: 100px 15px;
+    color: #fff;
+}
+.newsletter h2, .newsletter p{
+    text-align: center;
+    line-height: 34px;
+}
+.newsletter-box {
+    margin: 20px auto;
+    display: table;
+}
+.newsletter-box i {
+  background: #f7f7f7;
+  width: 42px; /* Adjust the width to match the height of the email input */
+  font-size: 16px;
+  text-align: center;
+  line-height: 42px; /* Set line-height to match the height of the email input */
+  color: #9c27b0;
+  border-right: 1px solid #ddd;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  height: 42px;
+}
+.newsletter .newsletter-box button {
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    background: #9c27b0;
+    color: #fff;
+    padding: 0 15px;
+    font-size: 14px;
+    cursor: pointer;
+    border: 2px solid #fff;
+    border-left: 0px;
+    height: 42px;
+    margin-top: 5px;
+}
+.emailbox{
+    border: none;
+    outline: none;
+}
+.emailbox {
+    width: 0px;
+    height: 42px;
+    transition: 0.6s;
+    font-size: 16px;
+}
+.newsletter-box:hover > .emailbox, .emailbox:focus{
+    width: 280px;
+    padding: 0 10px;
+}
+/* SUBSCRIPTION */
+
+/* CARD SHADOW */
+.card-shadow {
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); 
+    border-radius: 20px 20px 20px 20px;
+}
+/* CARD SHADOW */
+
+/*  */
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700;800&amp;display=swap');
+
+*,
+*:before,
+*:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+.album .responsive-container-block {
+  min-height: 75px;
+  height: fit-content;
+  width: 100%;
+  padding: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  justify-content: flex-start;
+}
+
+.album .responsive-container-block.bg {
+  max-width: 800px;
+  margin: 0 auto;
+  justify-content: space-between;
+}
+
+.album .img-wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 100%;
+  margin: 0 0 20px 0;
+  border-radius: 20px;
+  overflow: hidden;
+  transition: transform 0.3s ease-in-out;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); 
+}
+
+.album .img-wrapper:hover .img {
+  transform: scale(1.1);
+}
+
+.album .img {
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  transition: transform 0.3s ease-in-out;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.album .caption {
+  font-family: 'Merriweather', 'serif';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  width: 80%; /* Adjusted width for larger screens */
+  color: #353535;
+  font-size: 16px;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  background-color: white;
+  padding: 10px;
+  border-radius: 15px;
+}
+
+.album .img-wrapper:hover .caption {
+  opacity: 1;
+}
+
+.album #i9rb,
+.album #ir6i,
+.album #ikz3b,
+.album #ipix,
+.album #ipzoh,
+.album #ig5q8,
+.album #imtzl,
+.album #i53es {
+  color: black;
+}
+
+.album .responsive-container-block.img-cont {
+  flex-direction: column;
+  max-width: 33.3%;
+  min-height: auto;
+  margin: 0;
+  height: 100%;
+}
+
+.album #ipzoh {
+  color: black;
+}
+
+.album .img.img-big {
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    transition: transform 0.3s ease-in-out;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 1024px) {
+  .album .img-wrapper {
+    margin: 0 0 18px 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .album .img-wrapper {
+    max-width: 32.5%;
+    margin: 0;
+  }
+
+  .album .responsive-container-block.bg {
+    flex-direction: column;
+  }
+
+  .album .responsive-container-block.img-cont {
+    max-width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .album .img.img-big {
+    max-width: 49%;
+    margin: 0;
+  }
+
+  /* Adjust caption width for tablet screens */
+  .album .caption {
+    width: 90%;
+  }
+}
+
+@media (max-width: 500px) {
+  .album .img-wrapper {
+    max-width: 94%;
+    margin: 0 0 25px 0;
+  }
+
+  .album .responsive-container-block.img-cont {
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+  }
+
+  .album .img.img-big {
+    height: 80%; /* Adjusted height for better coverage */
+    margin: 0 0 25px 0;
+  }
+
+  .album .img.img-last {
+    margin: 0 0 5px 0;
+  }
+
+  /* Further adjustments for smaller screens */
+  .album .caption {
+    width: 100%;
+  }
+}
+
+.album .img-wrapper a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  text-decoration: none;
+}
+/* IMAGE GALLERY */
+
+/*  */
+.about-border {
+  display: block;
+  width: 80px;
+  height: 6px;
+  background: #f1cd8f;
+  margin: 20px auto;
+}
+/*  */
+
+/* Optional CSS to center align the heading text */
+.about h1, .about h2 {
+ text-align: center;
+}
+/* Optional CSS to center align the heading text */
+
+/*  */
