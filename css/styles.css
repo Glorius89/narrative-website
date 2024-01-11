@@ -60,7 +60,7 @@
   --bs-body-font-size: 1rem;
   --bs-body-font-weight: 400;
   --bs-body-line-height: 1.5;
-  --bs-body-color: #212529;
+  --bs-body-color: #474747;
   --bs-body-bg: #fff;
 }
 
@@ -633,7 +633,11 @@ progress {
   height: auto;
   border-radius: 20px 20px 20px 20px;
 }
-
+.img-fluid-thingstoknow {
+  max-width: 100%;
+  height: auto;
+  border-radius: 20px 20px 20px 20px;
+}
 .img-thumbnail {
   padding: 0.25rem;
   background-color: #fff;
@@ -2263,7 +2267,7 @@ progress {
 
 .form-control {
   display: block;
-  width: 100%;
+  width: 80%;
   padding: 0.375rem 0.75rem;
   font-size: 1rem;
   font-weight: 400;
@@ -3108,6 +3112,7 @@ textarea.form-control-lg {
   color: #fff;
   background-color: #EACD6F;
   border-color: #EACD6F;
+  border-radius: 20px;
 }
 .btn-primary:hover {
   color: #fff;
@@ -7063,6 +7068,7 @@ textarea.form-control-lg {
 
 .h-100 {
   height: 100% !important;
+  background-size: cover;
 }
 
 .h-auto {
@@ -7453,6 +7459,18 @@ textarea.form-control-lg {
 
 .mb-5 {
   margin-bottom: 3rem !important;
+}
+
+.mb-6 {
+  margin-bottom: 4rem !important;
+}
+
+.mb-7 {
+  margin-bottom: 5rem !important;
+}
+
+.mb-8 {
+  margin-bottom: 6rem !important;
 }
 
 .mb-auto {
@@ -8021,6 +8039,10 @@ textarea.form-control-lg {
 
 .rounded-3 {
   border-radius: 0.3rem !important;
+}
+
+.rounded-20 {
+  border-radius: 20px;
 }
 
 .rounded-circle {
@@ -11423,6 +11445,15 @@ p {
     padding: 0 0;
   }
 }
+
+@media (min-width: 768px) {
+  .signup-section {
+    padding: 0 0;
+    padding-top: 3rem;
+    padding-bottom: 4rem;
+  }
+}
+
 .btn-xl {
   padding: 1.25rem 2.5rem;
   font-family: 'Montserrat', 'sans serif';
@@ -11862,7 +11893,7 @@ header.masthead-food .masthead-heading-food {
   position: absolute;
   width: 100%;
   height: 100%;
-  background: rgba(255, 200, 0, 0.9);
+  background: #DBB866;
   align-items: center;
   justify-content: center;
   opacity: 0;
@@ -13280,7 +13311,7 @@ body {
   display: block;
   width: 80px;
   height: 6px;
-  background: #f1cd8f;
+  background: #DBB866;
   margin: 20px auto;
 }
 /*  */
@@ -13292,3 +13323,138 @@ body {
 /* Optional CSS to center align the heading text */
 
 /*  */
+.rounded-box {
+  border-radius: 20px; /* You can adjust the value to change the amount of rounding */
+}
+
+/*  */
+
+/* Full Width Image
+------------------------- */
+
+.bg-image-full {
+  background: no-repeat center center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+}
+
+/* Full Width Image End
+------------------------- */
+
+/* Project images from Greyscale template */
+
+.projects-section {
+  padding: 1rem 0;
+}
+.projects-section .featured-text {
+  padding: 2rem;
+}
+@media (min-width: 992px) {
+  .projects-section .featured-text {
+    padding: 0 0 0 4rem;
+  }
+}
+.projects-section .project-text {
+  padding: 3rem;
+  font-size: 90%;
+}
+@media (min-width: 992px) {
+  .projects-section .project-text {
+    padding: 3rem;
+  }
+  .projects-section .project-text hr {
+    border-color: #64a19d;
+    border-width: 0.25rem;
+    width: 30%;
+  }
+}
+
+/* End of project image styling from Greyscale template*/
+
+/* Carousel
+------------------------- */
+
+.carousel-item {
+  height: 100vh;
+  min-height: 350px;
+  background: no-repeat center center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+/* Carousel End
+------------------------- */
+.padding-landmarks {
+  padding-top: 4rem !important;
+  padding-bottom: 1rem !important;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-right {
+  text-align: right;
+}
+
+/*FADE-IN IMAGE*/
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+.fade-in-image { 
+  animation: fadeIn 7s; 
+}
+/*FADE-IN IMAGE*/
+/* SOURCE: https://blog.hubspot.com/website/css-fade-in */
+
+
+body {
+  font-family: 'Montserrat';
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+}
+
+.comment-section {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.comment {
+  margin-bottom: 20px;
+}
+
+.comment .user-info {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.comment img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.comment p {
+  margin: 0;
+}
+
+textarea, input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
