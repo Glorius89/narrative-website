@@ -40,7 +40,7 @@
   --bs-warning: #ffc800;
   --bs-danger: #dc3545;
   --bs-light: #f8f9fa;
-  --bs-dark: #212529;
+  --bs-dark: #6689db;
   --bs-primary-rgb: 255, 200, 0;
   --bs-secondary-rgb: 108, 117, 125;
   --bs-success-rgb: 25, 135, 84;
@@ -82,9 +82,9 @@ body {
   font-size: var(--bs-body-font-size);
   font-weight: var(--bs-body-font-weight);
   line-height: var(--bs-body-line-height);
-  color: var(--bs-body-color);
+  color: #213638;
   text-align: var(--bs-body-text-align);
-  background-color: var(--bs-body-bg);
+  background-color: #ece9d9;
   -webkit-text-size-adjust: 100%;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
@@ -457,7 +457,6 @@ legend + * {
 
 [type=search] {
   outline-offset: -2px;
-  -webkit-appearance: textfield;
 }
 
 /* rtl:raw:
@@ -633,10 +632,9 @@ progress {
   height: auto;
   border-radius: 20px 20px 20px 20px;
 }
-.img-fluid-thingstoknow {
-  max-width: 100%;
+.img-fluid-transport {
+  max-width: 110%;
   height: auto;
-  border-radius: 20px 20px 20px 20px;
 }
 .img-thumbnail {
   padding: 0.25rem;
@@ -2567,8 +2565,6 @@ textarea.form-control-lg {
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
-  -webkit-print-color-adjust: exact;
-          color-adjust: exact;
 }
 .form-check-input[type=checkbox] {
   border-radius: 0.25em;
@@ -7405,6 +7401,18 @@ textarea.form-control-lg {
   margin-top: 3rem !important;
 }
 
+.mt-6 {
+  margin-top: 4rem !important;
+}
+
+.mt-7 {
+  margin-top: 5rem !important;
+}
+
+.mt-8 {
+  margin-top: 6rem !important;
+}
+
 .mt-auto {
   margin-top: auto !important;
 }
@@ -7735,6 +7743,7 @@ textarea.form-control-lg {
 
 .fw-bold {
   font-weight: 700 !important;
+  margin-left: 2rem;
 }
 
 .fw-bolder {
@@ -7936,7 +7945,7 @@ textarea.form-control-lg {
 
 .bg-dark {
   --bs-bg-opacity: 1;
-  background-color: rgba(var(--bs-dark-rgb), var(--bs-bg-opacity)) !important;
+  background-color: #6689db !important;
 }
 
 .bg-black {
@@ -11449,7 +11458,7 @@ p {
 @media (min-width: 768px) {
   .signup-section {
     padding: 0 0;
-    padding-top: 3rem;
+    padding-top: 4rem;
     padding-bottom: 4rem;
   }
 }
@@ -13311,7 +13320,7 @@ body {
   display: block;
   width: 80px;
   height: 6px;
-  background: #DBB866;
+  background: #213638;
   margin: 20px auto;
 }
 /*  */
@@ -13388,6 +13397,8 @@ body {
 
 /* Carousel End
 ------------------------- */
+
+/* ------------- */
 .padding-landmarks {
   padding-top: 4rem !important;
   padding-bottom: 1rem !important;
@@ -13458,3 +13469,72 @@ textarea, input {
   margin-bottom: 10px;
 }
 
+/* COMMENT SECTION */
+.leave-comment-section {
+  padding-top: 4rem;
+  padding-bottom: 0.5rem;
+}
+/* COMMENT SECTION */
+
+/*  */
+/*  */
+.text-container {
+  max-width: 400px;
+  padding: 0 20px;
+}
+iframe {
+  max-width: 600px;
+  width: 100%;
+}
+
+
+/* WEATHER WIDGET */
+#ww_5b8e2cc36f51f {
+  max-width: none !important;
+}
+/* WEATHER WIDGET */
+
+
+
+
+/* Add this style to your existing CSS or in the head section */
+.square-image {
+  border-radius: 0; /* Set border-radius to 0 for square corners */
+}
+/* --- */
+
+/* INTERESTING FACTS */
+.interesting-facts-section {
+  margin-bottom: 4rem; /* Adjust the margin-bottom as needed */
+}
+/* INTERESTING FACTS */
+
+/* WEATHER WIDGET */
+.weather-heading {
+  font-size: 1rem;
+  color: #DBB866;
+  font-family: 'Montserrat';
+  font-weight: 500;
+}
+/* WEATHER WIDGET */
+
+/* UXPLORE INTRO */
+.custom-image-size {
+  width: 50%; /* Set the width as needed */
+  height: auto; /* Maintain aspect ratio */
+}
+/* UXPLORE INTRO */
+
+
+
+/* COLOUR PALETTE */
+
+/* LOGO */
+.logo-img {
+  width: 100px;
+  height: auto;
+}
+/* LOGO */
+
+/*  */
+/*  */

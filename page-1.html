@@ -99,6 +99,43 @@
 <!-- MASTHEAD -->
 
 
+<!-- YOUTUBE VIDEO-HISTORY -->
+<section class="page-section" id="team">
+    <div class="container">
+        <div class="text-center">
+            <h2 class="section-heading text-uppercase"></h2>
+                <h3 class="section-subheading text-muted"></h3>
+        </div>
+                    <div class="row">
+
+                        <div class="col-md-1 px-0"></div>
+
+                        <div class="col-md-5 px-0">
+                                <div class="jumbotron p-3 p-md-5" style="color:#474747;">
+                                    <h2 style="font-size: 1rem; color: #DBB866; font-family: 'Montserrat'; font-weight: 500;"><b>OVERVIEW</b></h2>
+                                        <h1 class="display-4 font-italic" style="font-family:'Merriweather', 'serif'">Bulgaria Through the Ages</h1>
+                                        <div class="about-border"></div>
+                                            <p class="my-3 text-muted">Discover <b>Bulgaria's vibrant history</b>, from ancient civilizations to modern times. Explore its diverse cultural tapestry and resilient spirit that continues to shape the country's narrative.</p>
+                                </div>
+                        </div>
+                        <div class="col-md-5 px-0">
+                            <iframe width="600" height="320" class="rounded-20" src="https://www.youtube.com/embed/t3lgeUSfVSk?autoplay=1&mute=1" title="The History of Bulgaria Explained
+                            " frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                            <!-- VIDEO SOURCE: https://www.youtube.com/watch?v=t3lgeUSfVSk -->
+
+                        </div>
+                        
+                        <div class="col-md-1 px-0"></div>
+                        
+                    </div>
+    </div>
+</section>
+<!-- YOUTUBE VIDEO-HISTORY -->
+
+
+<h1 class="mb-3 text-center">Bulgaria Through the Ages</h1>
+<h4 class="text-center">A Timeline Unveiling Centuries of Rich History</h4>
+<div class="about-border mb-5"></div>
 <!-- TIMELINE -->
     <section class="page-timeline">
         <ul class="timeline">
@@ -176,18 +213,138 @@
         </section>
 
 
-<!-- SUBSCRIPTION -->       
-<form action="" class="newsletter">
-    <h2>Subscribe to our newsletter and join UXplore</h2>
-        <p>Unlock Exclusive Travel Insights!</p>
-            <div class="newsletter-box">
-                <i class="fas fa-envelope"></i>
-                    <input class="emailbox" type="email" name="" value="" placeholder="Enter your email address">
-                        <button type="button" name="button">Subscribe</button>
+
+<!-- COMMENTS SECTION -->
+<section class="leave-comment-section">
+    <h2 class="mb-3 text-center" class=>Leave a Comment!</h2>
+                <div class="about-border mb-5"></div>
+    <div class="comment-section rounded-20">
+        <div class="comment">
+            <div class="user-info">
+                <img src="assets/img/comments-section/young-woman-photo.jpg" alt="Image of a young girl">
+                <div>
+                    <!-- IMAGE SOURCE: https://unsplash.com/photos/woman-smiling-wearing-denim-jacket-TSZo17r3m0s -->
+                    <strong>Emily Sander</strong>
+                    <span>2 weeks ago</span>
+                </div>
             </div>
-</form>
-<!-- Source: https://www.markuptag.com/how-to-create-responsive-newsletter-design-using-html-css/ -->
-<!-- SUBSCRIPTION -->
+            <p>This travel blog is an absolute gem! 🌍✨ The photos make you feel like you're right there. I love how Gloria shares local tips and adds a personal touch. It's my go-to for a quick dose of wanderlust and travel inspiration. Kudos to Gloria for spreading pure joy through her adventures! 🎉👏</p>
+        </div>
+    </div>
+
+        <!-- Add more comments here -->
+        <div class="comment-section rounded-20">
+        <div id="comments"></div>
+<p>Tell us what you think! 😊</p>
+        <input type="text" id="nameInput" placeholder="Your Name" class="rounded-20">
+        <textarea id="commentInput" placeholder="Write your comment..." class="rounded-20"></textarea>
+        <button class="btn btn-primary" onclick="postComment()">Post Comment</button>
+    </div>
+</div>
+</section>
+
+<script>
+    function postComment() {
+        var nameInput = document.getElementById("nameInput");
+        var commentInput = document.getElementById("commentInput");
+
+        var name = nameInput.value.trim();
+        var commentText = commentInput.value.trim();
+
+        if (name !== "" && commentText !== "") {
+            var commentSection = document.getElementById("comments");
+
+            var newComment = document.createElement("div");
+            newComment.className = "comment";
+
+            var userInfo = document.createElement("div");
+            userInfo.className = "user-info";
+
+            var userAvatar = document.createElement("img");
+            userAvatar.src = "assets/new-background2.jpg";
+            userAvatar.alt = "User Avatar";
+            userAvatar.width = 40;
+            userAvatar.height = 40;
+            userAvatar.style.borderRadius = "50%";
+            userAvatar.style.marginRight = "10px";
+
+            var userDetail = document.createElement("div");
+            var username = document.createElement("strong");
+            username.appendChild(document.createTextNode(name));
+            var timestamp = document.createElement("span");
+            timestamp.appendChild(document.createTextNode("Just now"));
+
+            userDetail.appendChild(username);
+            userDetail.appendChild(timestamp);
+
+            userInfo.appendChild(userAvatar);
+            userInfo.appendChild(userDetail);
+
+            var commentContent = document.createElement("p");
+            commentContent.appendChild(document.createTextNode(commentText));
+
+            newComment.appendChild(userInfo);
+            newComment.appendChild(commentContent);
+
+            commentSection.appendChild(newComment);
+
+            // Clear the input fields after posting the comment
+            nameInput.value = "";
+            commentInput.value = "";
+        }
+    }
+</script>
+<!-- COMMENTS SECTION -->
+
+
+
+<!-- SIGN UP -->
+<section class="signup-section mt-5 mb-6" id="signup">
+    <div class="container px-4 px-lg-5">
+        <div class="row gx-4 gx-lg-5">
+            <div class="col-md-10 col-lg-8 mx-auto text-center">
+                <i class="fa-regular fa-paper-plane"></i>
+                <h2 class="mb-3">Subscribe to receive updates!</h2>
+                <div class="about-border mb-5"></div>
+                <!-- * * * * * * * * * * * * * * *-->
+                <!-- * * SB Forms Contact Form * *-->
+                <!-- * * * * * * * * * * * * * * *-->
+                <!-- This form is pre-integrated with SB Forms.-->
+                <!-- To make this form functional, sign up at-->
+                <!-- https://startbootstrap.com/solution/contact-forms-->
+                <!-- to get an API token!-->
+                <form class="form-signup" id="contactForm" data-sb-form-api-token="API_TOKEN">
+                    <!-- Email address input-->
+                    <div class="row input-group-newsletter">
+                        <div class="col"><input class="form-control" id="emailAddress" type="email" placeholder="Enter email address..." aria-label="Enter email address..." data-sb-validations="required,email" /></div>
+                        <div class="col-auto"><button class="btn btn-primary" id="submitButton" type="submit">Notify Me!</button></div>
+                    </div>
+                    <div class="invalid-feedback mt-2" data-sb-feedback="emailAddress:required">An email is required.</div>
+                    <div class="invalid-feedback mt-2" data-sb-feedback="emailAddress:email">Email is not valid.</div>
+                    <!-- Submit success message-->
+                    <!---->
+                    <!-- This is what your users will see when the form-->
+                    <!-- has successfully submitted-->
+                    <div class="d-none mb-6" id="submitSuccessMessage">
+                        <div class="text-center mb-3 mt-2 text-white">
+                            <div class="fw-bolder">Form submission successful!</div>
+                            To activate this form, sign up at
+                            <br />
+                            <a href="https://startbootstrap.com/solution/contact-forms">https://startbootstrap.com/solution/contact-forms</a>
+                        </div>
+                    </div>
+                    <!-- Submit error message-->
+                    <!---->
+                    <!-- This is what your users will see when there is-->
+                    <!-- an error submitting the form-->
+                    <div class="d-none" id="submitErrorMessage"><div class="text-center text-danger mb-3 mt-2">Error sending message!</div></div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- SIGN UP -->
+
 
 
 <!-- FOOTER -->

@@ -54,10 +54,10 @@
 
 <!-- START THE FEATURETTES -->
 <div class="container mt-5">
-    <h2 class="my-4">Bulgarian Food Classics</h2>
+    <h2 style="font-size: 1rem; color: #DBB866; font-family: 'Montserrat'; font-weight: 500;" class="my-4 tran animate__animated animate__fadeInLeft" data-wow-delay="0.2s" style="visibility: visible;"><b>TYPICAL DISHES</b></h2>
         <div class="row featurette">
             <div class="col-md-7">
-                <h2 class="featurette-heading">Tarator<p class="text-muted" style="font-size:1.5rem">Cold Soup</p></h2>
+                <h2 class="featurette-heading" style="color: #DBB866">Tarator<p class="text-muted" style="font-size:1.5rem">Cold Soup</p></h2>
                     <p class="lead">Tarator, a popular cold soup in Bulgaria, is a refreshing yoghurt-based beverage enjoyed as a summer refresher and commonly consumed at the beginning of meals. Legend suggests the recipe was borrowed from the Greeks and adapted by Bulgarians with the addition of water. This light and cold soup, made with yoghurt, cucumbers, and garlic, is particularly delightful during the hot summer months.</p>
                     <!-- Text Source: https://www.kashkaval-tourist.com/7-bulgarian-food-classics/ -->
             </div>
@@ -71,7 +71,7 @@
     
     <div class="row featurette">
         <div class="col-md-7 order-md-2">
-          <h2 class="featurette-heading">Meshana Skara<p class="text-muted" style="font-size:1.5rem">Mixed Grill</p></h2>
+          <h2 class="featurette-heading" style="color: #DBB866">Meshana Skara<p class="text-muted" style="font-size:1.5rem">Mixed Grill</p></h2>
           <p class="lead">The Meshana Skara is a revered Bulgarian dish, particularly for meat enthusiasts. This mixed grill features classic items like kebapche, kyufte, pork skewers, and a pork steak. The dish, which includes one of each element, is served with French fries, bean salad with chopped onions, and lyutenitsa, making it a classic and satisfying Bulgarian meal.</p>
           <!-- Text Source: https://visitmybulgaria.com/10-bulgarian-food-classics-need-must-eat-bucket-list/ -->
           <!-- Text Source: https://www.findbgfood.com/recipe-meshana-skara -->
@@ -88,7 +88,7 @@
     <h2 class="my-4"></h2>
         <div class="row featurette">
             <div class="col-md-7">
-                <h2 class="featurette-heading">Shopska Salad
+                <h2 class="featurette-heading" style="color: #DBB866">Shopska Salad
                     <p class="text-muted" style="font-size:1.5rem">Bulgarian Roast Pepper And Tomato Salad</p></h2>
                         <p class="lead">Bulgaria's iconic Shopska salad, a culinary symbol, blends diced tomatoes, cucumbers, onions, and peppers with grated sirene cheese and parsley. Its vibrant colors mirror the national flag, symbolizing a strong connection to the country. Named after the thrifty 'Shopi' people in Sofia and the mountains, this salad carries both international acclaim and cultural significance.</p>
                         <!-- Text Source: https://visitmybulgaria.com/10-bulgarian-food-classics-need-must-eat-bucket-list/ -->
@@ -122,10 +122,144 @@
   </div>
     <!-- /END THE FEATURETTES -->
        
+
+
+<!-- COMMENTS SECTION -->
+<section class="leave-comment-section">
+    <h2 class="mb-3 text-center" class=>Leave a Comment!</h2>
+                <div class="about-border mb-5"></div>
+    <div class="comment-section rounded-20">
+        <div class="comment">
+            <div class="user-info">
+                <img src="assets/img/comments-section/young-woman-photo.jpg" alt="Image of a young girl">
+                <div>
+                    <!-- IMAGE SOURCE: https://unsplash.com/photos/woman-smiling-wearing-denim-jacket-TSZo17r3m0s -->
+                    <strong>Emily Sander</strong>
+                    <span>2 weeks ago</span>
+                </div>
+            </div>
+            <p>This travel blog is an absolute gem! 🌍✨ The photos make you feel like you're right there. I love how Gloria shares local tips and adds a personal touch. It's my go-to for a quick dose of wanderlust and travel inspiration. Kudos to Gloria for spreading pure joy through her adventures! 🎉👏</p>
+        </div>
+    </div>
+
+        <!-- Add more comments here -->
+        <div class="comment-section rounded-20">
+        <div id="comments"></div>
+<p>Tell us what you think! 😊</p>
+        <input type="text" id="nameInput" placeholder="Your Name" class="rounded-20">
+        <textarea id="commentInput" placeholder="Write your comment..." class="rounded-20"></textarea>
+        <button class="btn btn-primary" onclick="postComment()">Post Comment</button>
+    </div>
+</div>
+</section>
+
+<script>
+    function postComment() {
+        var nameInput = document.getElementById("nameInput");
+        var commentInput = document.getElementById("commentInput");
+
+        var name = nameInput.value.trim();
+        var commentText = commentInput.value.trim();
+
+        if (name !== "" && commentText !== "") {
+            var commentSection = document.getElementById("comments");
+
+            var newComment = document.createElement("div");
+            newComment.className = "comment";
+
+            var userInfo = document.createElement("div");
+            userInfo.className = "user-info";
+
+            var userAvatar = document.createElement("img");
+            userAvatar.src = "assets/new-background2.jpg";
+            userAvatar.alt = "User Avatar";
+            userAvatar.width = 40;
+            userAvatar.height = 40;
+            userAvatar.style.borderRadius = "50%";
+            userAvatar.style.marginRight = "10px";
+
+            var userDetail = document.createElement("div");
+            var username = document.createElement("strong");
+            username.appendChild(document.createTextNode(name));
+            var timestamp = document.createElement("span");
+            timestamp.appendChild(document.createTextNode("Just now"));
+
+            userDetail.appendChild(username);
+            userDetail.appendChild(timestamp);
+
+            userInfo.appendChild(userAvatar);
+            userInfo.appendChild(userDetail);
+
+            var commentContent = document.createElement("p");
+            commentContent.appendChild(document.createTextNode(commentText));
+
+            newComment.appendChild(userInfo);
+            newComment.appendChild(commentContent);
+
+            commentSection.appendChild(newComment);
+
+            // Clear the input fields after posting the comment
+            nameInput.value = "";
+            commentInput.value = "";
+        }
+    }
+</script>
+<!-- COMMENTS SECTION -->
+
+
         
+<!-- SIGN UP -->
+<section class="signup-section mt-5 mb-6" id="signup">
+    <div class="container px-4 px-lg-5">
+        <div class="row gx-4 gx-lg-5">
+            <div class="col-md-10 col-lg-8 mx-auto text-center">
+                <i class="fa-regular fa-paper-plane"></i>
+                <h2 class="mb-3">Subscribe to receive updates!</h2>
+                <div class="about-border mb-5"></div>
+                <!-- * * * * * * * * * * * * * * *-->
+                <!-- * * SB Forms Contact Form * *-->
+                <!-- * * * * * * * * * * * * * * *-->
+                <!-- This form is pre-integrated with SB Forms.-->
+                <!-- To make this form functional, sign up at-->
+                <!-- https://startbootstrap.com/solution/contact-forms-->
+                <!-- to get an API token!-->
+                <form class="form-signup" id="contactForm" data-sb-form-api-token="API_TOKEN">
+                    <!-- Email address input-->
+                    <div class="row input-group-newsletter">
+                        <div class="col"><input class="form-control" id="emailAddress" type="email" placeholder="Enter email address..." aria-label="Enter email address..." data-sb-validations="required,email" /></div>
+                        <div class="col-auto"><button class="btn btn-primary" id="submitButton" type="submit">Notify Me!</button></div>
+                    </div>
+                    <div class="invalid-feedback mt-2" data-sb-feedback="emailAddress:required">An email is required.</div>
+                    <div class="invalid-feedback mt-2" data-sb-feedback="emailAddress:email">Email is not valid.</div>
+                    <!-- Submit success message-->
+                    <!---->
+                    <!-- This is what your users will see when the form-->
+                    <!-- has successfully submitted-->
+                    <div class="d-none mb-6" id="submitSuccessMessage">
+                        <div class="text-center mb-3 mt-2 text-white">
+                            <div class="fw-bolder">Form submission successful!</div>
+                            To activate this form, sign up at
+                            <br />
+                            <a href="https://startbootstrap.com/solution/contact-forms">https://startbootstrap.com/solution/contact-forms</a>
+                        </div>
+                    </div>
+                    <!-- Submit error message-->
+                    <!---->
+                    <!-- This is what your users will see when there is-->
+                    <!-- an error submitting the form-->
+                    <div class="d-none" id="submitErrorMessage"><div class="text-center text-danger mb-3 mt-2">Error sending message!</div></div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- SIGN UP -->
+
+
+
 <!-- FOOTER -->
-<div class="container bg-light">
-    <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 my-5 border-top">
+<div class="container-footer">
+    <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 my-5">
         <div class="col mb-3">
             <a href="#" class="d-flex align-items-center mb-3 link-dark text-decoration-none">
                 <div class="divider-custom-icon"><i class="fas fa-star fa-lg"></i></div>

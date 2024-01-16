@@ -20,6 +20,12 @@
         <link href="css/styles.css" rel="stylesheet" />
         <!-- CSS ANIMATION -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+        <!-- Add this in the <head> section of your HTML -->
+        <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+        <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+        <!--  -->
+      
+
     </head>
     <body id="page-top">
 
@@ -29,7 +35,10 @@
  <!-- NAVIGATION -->
  <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
     <div class="container">
-        <a class="navbar-brand" href="index.html"><img src="assets/img/navbar-logo.svg" alt="..." /></a>
+        <a class="navbar-brand" href="index.html">
+            <img src="assets/img/logo2.png" alt="Logo" class="logo-img" />
+        </a>
+        
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
             Menu
                 <i class="fas fa-bars ms-1"></i>
@@ -61,47 +70,34 @@
 <!-- MASTHEAD -->
 
 
-<!-- UXPLORE INTRO -->
-<section class="page-section" id="team">
-    <div class="container">
-        <div class="text-center">
-            <h2 class="section-heading text-uppercase">Welcome to UXplore</h2>
-                <h3 class="section-subheading text-muted">Your Gateway to Wanderlust Wonderland!</h3>
-        </div>
-                    <div class="row justify-content-center">
 
-                        <div class="col-lg-1"></div>
-
-                        <div class="col-lg-4">
-                            <div class="team-member">
-                                <img class="mx-auto rounded-circle" src="assets/img/profile-picture/Profile picture.jpg" alt="..." />
-                                    <h4></h4>
-                                        <p class="text-muted"></p>
-                            </div>
-                        </div>
-                        <div class="col-lg-6">
-                            <div class="team-member">
-                                <h4>Hey, fellow travel enthusiasts!</h4>
-                                    <p class="text-muted">I'm Gloria, your virtual guide through the enchanting realms of wanderlust. Join me on a thrilling adventure as we uncover the world's most breathtaking destinations and transform your travel aspirations into reality.</p>
-                            </div>
-                        </div>
-
-                        <div class="col-lg-1"></div>
-
-                    </div>
-                    <div class="row">
-                        <div class="col-lg-8 mx-auto text-center"><p class="large text-muted"></p></div>
+<!-- ONE FEATURED POST: UXPLORE INTRO -->
+<section>
+    <div class="container mt-4">
+        <div class="jumbotron p-3 p-md-5 text-white rounded-20 featured-background">
+            <div class="row">
+                <div class="col-md-6">
+                    <h1 class="display-4 font-italic">Welcome to UXplore</h1>
+                    <p class="lead my-3">I'm Gloria, your virtual guide through the enchanting realms of wanderlust. Join me on a thrilling adventure as we uncover the world's most breath-taking destinations and transform your travel aspirations into reality.</p>
+                    <p class="lead mb-0"><a href="#" class="text-white font-weight-bold">Continue reading...</a></p>
+                </div>
+                <div class="col-md-6">
+                    <!-- Insert your image here with a smaller size -->
+                    <img src="assets/img/uxplore-intro/profile-picture.jpg" class="img-fluid rounded-20 custom-image-size" alt="Image description">
+                </div>
+            </div>
         </div>
     </div>
 </section>
-<!-- UXPLORE INTRO -->
+<!-- ONE FEATURED POST: UXPLORE INTRO -->
 
 
-<!-- IMAGE GALLERY -->
-<section class="imagegallery" style="background-color:#6689db">
-    <div class="container-imagegallery mt-5">
-        <h1 class="text-center tran animate__animated animate__fadeInLeft" style="color:#fff"  style="visibility: visible;">TABLE OF CONTENT</h1>
-            <p class="text-center tran animate__animated animate__fadeInRight" style="font-size: 1rem; color: #fff; visibility: visible;">Click on the following to start your journey</p>
+
+<!-- TABLE OF CONTENT -->
+<section class="imagegallery" style="background-color:#F9F8F3" style="padding-bottom: 0; padding-top: 0">
+    <div class="container-imagegallery">
+        <h1 class="text-center tran animate__animated animate__fadeInLeft" style="visibility: visible;" >TABLE OF CONTENT</h1>
+            <p class="text-center tran animate__animated animate__fadeInRight" style="font-size: 1rem; visibility: visible;">Click on the following to start your journey</p>
                 <div class="about-border"></div>
                     <div class="album">
                     <div class="responsive-container-block bg">
@@ -187,76 +183,158 @@
                 </div>
     </div>
 </section>
-<!-- IMAGE GALLERY -->
+<!--TABLE OF CONTENT -->
 <!-- SOURCE: https://workik.com/best-gallery-designs-for-websites-with-html-css-and-javascript -->
 
 
 
-
 <!-- POST FEATURED WITH YOUTUBE VIDEO START -->
-<section class="page-section" id="team">
+<section class="page-section bg-light" style="padding: 0" id="team">
     <div class="container">
         <div class="text-center">
             <h2 class="section-heading text-uppercase"></h2>
-                <h3 class="section-subheading text-muted"></h3>
+            <h3 class="section-subheading text-muted"></h3>
         </div>
-                    <div class="row">
-                        <div class="col-md-5 px-0">
-                                <div class="jumbotron p-3 p-md-5" style="color:#474747;">
-                                    <h2 style="font-size: 1rem; color: #DBB866; font-family: 'Montserrat'; font-weight: 500;">ABOUT SOFIA</h2>
-                                        <h1 class="display-4 font-italic" style="font-family:'Merriweather', 'serif'">Tour Video of Sofia</h1>
-                                            <p class="my-3">Discover Sofia's highlights on my initial day in the capital of Bulgaria. My exploration in Sofia encompasses a visit to the <b>Cathedral</b> and the elusive <b>Roman city of Serdica</b>, concealed beneath the city center.</p>
-                                </div>
-                        </div>
-                        <div class="col-md-7 px-0">
-                                    <iframe width="600" height="320" src="https://www.youtube.com/embed/sDpMIFDKUvM?autoplay=1&mute=1" title="A LOST CITY Under SOFIA | Exploring BULGARIA'S Capital" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                        </div>
-                    </div>
+        <div class="row align-items-center">
+            <div class="col-md-5">
+                <div class="jumbotron p-3 p-md-5" style="color: #474747;">
+                    <h2 style="font-size: 1rem; color: #DBB866; font-family: 'Montserrat'; font-weight: 500;"><b>OVERVIEW</b></h2>
+                    <h1 class="display-4 font-italic" style="font-family: 'Merriweather', 'serif'">Life in Bulgaria</h1>
+                    <p class="my-3">Discover Sofia's cultural allure in our captivating video journey. From iconic landmarks like St. Nevsky Cathedral to the historic Serdica Complex, explore the heart of <b>Bulgaria's capital</b>. Immerse yourself in the city's rich heritage and friendly atmosphere, inviting you to experience Sofia's authentic charm.</p>
+                </div>
+            </div>
+            <div class="col-md-7">
+                <iframe width="100%" height="320" class="rounded-20" src="https://www.youtube.com/embed/uNRW34nmSC4?autoplay=1&mute=1" title="Life in Bulgaria - The Least Known Country in Europe" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <!-- VIDEO SOURCE: https://www.youtube.com/watch?v=uNRW34nmSC4 -->
+            </div>
+        </div>
     </div>
 </section>
 <!-- POST FEATURED WITH YOUTUBE VIDEO END -->
 
 
-<!-- INTERESTING FACTS BANNER START -->
-<div class="container mt-5 bg-light">
-    <div class="row justify-content-center">
-
-        <div class="col-sm-1"></div>
-
-        <div class="col-sm-3 tran animate__animated animate__fadeInUp" data-wow-delay="0.2s" style="visibility: visible; animation-delay: 0.8s;">
-            <div class="wrapper-test">
-                <img class="icon-test" src="assets/mountains.png">
-                    <h3 class="text-test">Sofia is nestled in the foot of a mountain</h3>
+  
+<!-- OPENSTREET MAP -->
+<section class="page-section" style="background-color:#CFE7E5" id="about">
+    <div class="container px-4 px-lg-5">
+        <div class="row gx-4 gx-lg-5 justify-content-center">
+            <div class="col-lg-8 text-center">
+                <h2 class="mt-0">Navigating the Heart of Bulgaria</h2>
+                <div class="about-border"></div>
+                <p class="text-white-75 mb-6">Get ready to explore the emotional spots where she hustles, grows, and celebrates. It's like a storytelling adventure through Sofia's life!</p>
+            </div>
         </div>
-                        <p>Sofia lies at the foot of Mount Vitosha which adds to its natural beauty. The mountain stands as a guard to the city in many ways including protecting it from harsh climatic conditions. Yet it offers a breathtaking backdrop and is a playground for outdoor adventure.</p>
-                        <p></p>
-            </div>
-        <div class="col-sm-3 tran animate__animated animate__fadeInUp" data-wow-delay="0.2s" style="visibility: visible; animation-delay: 1.2s;">
-            <div class="wrapper-test">
-                <img class="icon-test" src="assets/diversity.png">
-                    <h3 class="text-test">Sofia’s population is diverse</h3>
+   
+        <div class="portfolio-item" style="position: relative;">
+            <!-- Container for the map -->
+            <div id="map" style="height: 350px;"></div>
+
+            <!-- Add pins/markers with Leaflet JavaScript -->
+            <script>
+                var map = L.map('map').setView([42.6977, 23.3219], 13); // Sofia coordinates and zoom level
+
+                L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                    attribution: '© OpenStreetMap contributors'
+                }).addTo(map);
+
+                // Add a marker for Sofia
+                L.marker([42.6977, 23.3219]).addTo(map)
+                    .bindPopup('Sofia, Bulgaria'); // Customize the popup content
+            </script>
         </div>
-                        <p>The dominant ethnic group in Sofia is Bulgarians. Yet the population also consists of significant minority groups such as Turks, Roma, and Russians. The largest minority group is the Bulgarian Turks who account for attest 10% of the country’s entire population.</p>
-                        <p></p>
-            </div>
-        <div class="col-sm-3 tran animate__animated animate__fadeInUp" data-wow-delay="0.2s" style="visibility: visible; animation-delay: 1.6s;">
-            <div class="wrapper-test">
-                <img  class="icon-test" src="assets/green-city.png">
-                    <h3 class="text-test">Sofia is one of Europe’s greenest capitals</h3>   
-        </div>     
-                        <p>This city has earned a reputation for sustainability and commitment to greenery. This has made Sofia a remarkable green oasis with an extensive network of parks and lush green spaces making it one of the greenest capitals in Europe.</p>
-                        <p></p>
-            </div>
-        
-        <div class="col-sm-1"></div>
     </div>
 </div>
-<!-- INTERESTING FACTS BANNER END -->
+</section>
+<!-- OPENSTREET MAP END -->
+
+
+
+<!-- COMMENTS SECTION -->
+<section class="leave-comment-section">
+    <h2 class="mb-3 text-center" class=>Leave a Comment!</h2>
+                <div class="about-border mb-5"></div>
+    <div class="comment-section rounded-20">
+        <div class="comment">
+            <div class="user-info">
+                <img src="assets/img/comments-section/young-woman-photo.jpg" alt="Image of a young girl">
+                <div>
+                    <!-- IMAGE SOURCE: https://unsplash.com/photos/woman-smiling-wearing-denim-jacket-TSZo17r3m0s -->
+                    <strong>Emily Sander</strong>
+                    <span>2 week ago</span>
+                </div>
+            </div>
+            <p>This travel blog is an absolute gem! 🌍✨ The photos make you feel like you're right there. I love how Gloria shares local tips and adds a personal touch. It's my go-to for a quick dose of wanderlust and travel inspiration. Kudos to Gloria for spreading pure joy through her adventures! 🎉👏</p>
+        </div>
+    </div>
+
+        <!-- Add more comments here -->
+        <div class="comment-section rounded-20">
+        <div id="comments"></div>
+<p>Tell us what you think! 😊</p>
+        <input type="text" id="nameInput" placeholder="Your Name" class="rounded-20">
+        <textarea id="commentInput" placeholder="Write your comment..." class="rounded-20"></textarea>
+        <button class="btn btn-primary" onclick="postComment()">Post Comment</button>
+    </div>
+</div>
+</section>
+
+<script>
+    function postComment() {
+        var nameInput = document.getElementById("nameInput");
+        var commentInput = document.getElementById("commentInput");
+
+        var name = nameInput.value.trim();
+        var commentText = commentInput.value.trim();
+
+        if (name !== "" && commentText !== "") {
+            var commentSection = document.getElementById("comments");
+
+            var newComment = document.createElement("div");
+            newComment.className = "comment";
+
+            var userInfo = document.createElement("div");
+            userInfo.className = "user-info";
+
+            var userAvatar = document.createElement("img");
+            userAvatar.src = "assets/new-background2.jpg";
+            userAvatar.alt = "User Avatar";
+            userAvatar.width = 40;
+            userAvatar.height = 40;
+            userAvatar.style.borderRadius = "50%";
+            userAvatar.style.marginRight = "10px";
+
+            var userDetail = document.createElement("div");
+            var username = document.createElement("strong");
+            username.appendChild(document.createTextNode(name));
+            var timestamp = document.createElement("span");
+            timestamp.appendChild(document.createTextNode("Just now"));
+
+            userDetail.appendChild(username);
+            userDetail.appendChild(timestamp);
+
+            userInfo.appendChild(userAvatar);
+            userInfo.appendChild(userDetail);
+
+            var commentContent = document.createElement("p");
+            commentContent.appendChild(document.createTextNode(commentText));
+
+            newComment.appendChild(userInfo);
+            newComment.appendChild(commentContent);
+
+            commentSection.appendChild(newComment);
+
+            // Clear the input fields after posting the comment
+            nameInput.value = "";
+            commentInput.value = "";
+        }
+    }
+</script>
+<!-- COMMENTS SECTION -->
 
 
 
 <!-- SIGN UP -->
-<section class="signup-section mt-5 mb-6" style="background-color:#6689db" id="signup">
+<section class="signup-section mt-5 mb-6" id="signup">
     <div class="container px-4 px-lg-5">
         <div class="row gx-4 gx-lg-5">
             <div class="col-md-10 col-lg-8 mx-auto text-center">
@@ -301,11 +379,12 @@
     </div>
 </section>
 <!-- SIGN UP -->
+
+
                         
 <!-- FOOTER -->
-<div class="container bg-light">
-    <a href="" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
-    <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 my-5 border-top">
+<div class="container-footer">
+    <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 my-5">
         <div class="col mb-3">
             <a href="#" class="d-flex align-items-center mb-3 link-dark text-decoration-none">
                 <div class="divider-custom-icon"><i class="fas fa-star fa-lg"></i></div>
