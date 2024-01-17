@@ -80,11 +80,11 @@ body {
   margin: 0;
   font-family: 'Montserrat', 'sans serif';
   font-size: var(--bs-body-font-size);
-  font-weight: var(--bs-body-font-weight);
+  font-weight: 500;
   line-height: var(--bs-body-line-height);
-  color: #213638;
+  color: #504b45;
   text-align: var(--bs-body-text-align);
-  background-color: #ece9d9;
+  background-color: #fff;
   -webkit-text-size-adjust: 100%;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
@@ -258,7 +258,7 @@ sup {
 }
 
 a {
-  color: #ffc800;
+  color: #4D4435;
   text-decoration: underline;
 }
 a:hover {
@@ -2265,7 +2265,7 @@ progress {
 
 .form-control {
   display: block;
-  width: 80%;
+  width: 100%;
   padding: 0.375rem 0.75rem;
   font-size: 1rem;
   font-weight: 400;
@@ -2279,6 +2279,7 @@ progress {
           appearance: none;
   border-radius: 0.25rem;
   transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  border-radius: 20px;
 }
 @media (prefers-reduced-motion: reduce) {
   .form-control {
@@ -3106,8 +3107,8 @@ textarea.form-control-lg {
 
 .btn-primary {
   color: #fff;
-  background-color: #EACD6F;
-  border-color: #EACD6F;
+  background-color: #6d420d;
+  border-color: #6d420d;
   border-radius: 20px;
 }
 .btn-primary:hover {
@@ -7743,7 +7744,6 @@ textarea.form-control-lg {
 
 .fw-bold {
   font-weight: 700 !important;
-  margin-left: 2rem;
 }
 
 .fw-bolder {
@@ -7819,7 +7819,7 @@ textarea.form-control-lg {
 /* rtl:end:remove */
 .text-primary {
   --bs-text-opacity: 1;
-  color: rgba(var(--bs-primary-rgb), var(--bs-text-opacity)) !important;
+  color: #D4B284 !important;
 }
 
 .text-secondary {
@@ -7859,7 +7859,7 @@ textarea.form-control-lg {
 
 .text-black {
   --bs-text-opacity: 1;
-  color: rgba(var(--bs-black-rgb), var(--bs-text-opacity)) !important;
+  color: #504b45;
 }
 
 .text-white {
@@ -7874,7 +7874,7 @@ textarea.form-control-lg {
 
 .text-muted {
   --bs-text-opacity: 1;
-  color: #6c757d !important;
+  color: #594a3f !important;
 }
 
 .text-black-50 {
@@ -11458,8 +11458,7 @@ p {
 @media (min-width: 768px) {
   .signup-section {
     padding: 0 0;
-    padding-top: 4rem;
-    padding-bottom: 4rem;
+    padding-top: 1rem;
   }
 }
 
@@ -11504,7 +11503,7 @@ p {
   height: 1.5rem;
 }
 #mainNav .navbar-nav .nav-item .nav-link {
-  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: 'Merriweather, serif';
   font-size: 0.95rem;
   color: #fff;
   letter-spacing: 0.0625em;
@@ -11556,7 +11555,7 @@ header.masthead {
   text-align: center;
   color: #fff;
   background-image: url("../assets/img/background/homepage.jpg");
-  /* Source:  */
+  /* Source: https://unsplash.com/photos/brown-and-white-concrete-building-near-body-of-water-during-daytime-V7GrFTVwdko */
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-position: center center;
@@ -11613,38 +11612,37 @@ header.masthead-history {
 }
   
 header.masthead-history .masthead-subheading-history {
-    font-size: 1.5rem;
-    line-height: 1.5rem;
-    margin-bottom: 25px;
-    font-family: 'Merriweather', serif;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  margin-bottom: 25px;
+  font-family: 'Montserrat', 'sans serif';
 }
 
 header.masthead-history .masthead-heading-history {
-    font-size: 3.25rem;
-    font-weight: 700;
-    line-height: 3.25rem;
-    margin-bottom: 2rem;
-    font-family: 'Merriweather', serif;
+  font-size: 3.25rem;
+  font-weight: 700;
+  line-height: 3.25rem;
+  margin-bottom: 1rem;
+  font-family: 'Merriweather, serif';
+}
+
+@media (min-width: 768px) {
+  header.masthead-history {
+    padding-top: 12rem;
+    padding-bottom: 12.5rem;
 }
   
-@media (min-width: 768px) {
-    header.masthead-history {
-      padding-top: 17rem;
-      padding-bottom: 12.5rem;
-}
-    
 header.masthead-history .masthead-subheading-history {
-      font-size: 2.25rem;
-      line-height: 2.25rem;
-      margin-bottom: 2rem;
+    font-size: 1rem;
+    line-height: 2.25rem;
+    margin-bottom: 1rem;
 }
 
 header.masthead-history .masthead-heading-history {
-      font-size: 4.5rem;
-      font-weight: 700;
-      line-height: 4.5rem;
-      margin-bottom: 4rem;
-  }
+    font-size: 6rem;
+    font-weight: 500;
+    line-height: 4.5rem;
+}
 }
 /* HISTORY SECTION */
 
@@ -11703,8 +11701,8 @@ header.masthead-food {
   padding-bottom: 6rem;
   text-align: center;
   color: #fff;
-  background-image: url("../assets/img/background/food.jpg");
-  /* Source: https://www.pexels.com/photo/delicious-acai-smoothie-bowl-in-close-up-photography-4099236/ */
+  background-image: url("../assets/img/background/cuisine.jpg");
+  /* Source: https://unsplash.com/photos/meat-and-vegetable-food-SQczzyGkmpU */
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-position: center center;
@@ -11745,6 +11743,55 @@ header.masthead-food .masthead-heading-food {
 }
 }
 /* FOOD SECTION */
+
+/* THINGS TO KNOW SECTION */
+header.masthead-things-to-know {
+  padding-top: 10.5rem;
+  padding-bottom: 6rem;
+  text-align: center;
+  color: #fff;
+  background-image: url("../assets/img/background/things-to-know.jpg");
+  /* Source: https://unsplash.com/photos/a-group-of-people-walking-down-a-street-next-to-each-other-ESZnoZfkMRs */
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: center center;
+  background-size: cover;
+}
+
+header.masthead-things-to-know .masthead-subheading-things-to-know {
+  font-size: 1rem;
+  line-height: 1.5rem;
+  margin-bottom: 25px;
+  font-family: 'Montserrat', 'sans serif';
+}
+
+header.masthead-things-to-know .masthead-heading-things-to-know {
+  font-size: 3.25rem;
+  font-weight: 700;
+  line-height: 3.25rem;
+  margin-bottom: 1rem;
+  font-family: 'Montserrat', 'sans serif';
+}
+
+@media (min-width: 768px) {
+  header.masthead-things-to-know {
+    padding-top: 12rem;
+    padding-bottom: 12.5rem;
+}
+  
+header.masthead-things-to-know .masthead-subheading-things-to-know {
+    font-size: 1rem;
+    line-height: 2.25rem;
+    margin-bottom: 1rem;
+}
+
+header.masthead-things-to-know .masthead-heading-things-to-know {
+    font-size: 6rem;
+    font-weight: 500;
+    line-height: 4.5rem;
+}
+}
+/* THINGS TO KNOW SECTION */
 
 #portfolio .portfolio-item {
   max-width: 26rem;
@@ -12262,7 +12309,7 @@ section#contact form#contactForm :-ms-input-placeholder {
 ------------------------- */
 ::selection {
   color: #fff;
-  background: #1cc7d0;
+  background: #0a58ca;
 }
 
 .wrapper {
@@ -13320,7 +13367,7 @@ body {
   display: block;
   width: 80px;
   height: 6px;
-  background: #213638;
+  background: #484d41;
   margin: 20px auto;
 }
 /*  */
@@ -13355,7 +13402,7 @@ body {
 /* Project images from Greyscale template */
 
 .projects-section {
-  padding: 1rem 0;
+  padding: 0.5rem 0;
 }
 .projects-section .featured-text {
   padding: 2rem;
@@ -13371,7 +13418,7 @@ body {
 }
 @media (min-width: 992px) {
   .projects-section .project-text {
-    padding: 3rem;
+    padding: 2rem;
   }
   .projects-section .project-text hr {
     border-color: #64a19d;
@@ -13400,12 +13447,17 @@ body {
 
 /* ------------- */
 .padding-landmarks {
-  padding-top: 4rem !important;
+  padding-top: 1rem !important;
   padding-bottom: 1rem !important;
   padding-left: 0 !important;
   padding-right: 0 !important;
 }
-
+.padding-landmarks-grid3 {
+  padding-top: 6rem !important;
+  padding-bottom: 1rem !important;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
 .text-left {
   text-align: left;
 }
@@ -13426,13 +13478,6 @@ body {
 /*FADE-IN IMAGE*/
 /* SOURCE: https://blog.hubspot.com/website/css-fade-in */
 
-
-body {
-  font-family: 'Montserrat';
-  background-color: #f4f4f4;
-  margin: 0;
-  padding: 0;
-}
 
 .comment-section {
   max-width: 600px;
@@ -13536,5 +13581,20 @@ iframe {
 }
 /* LOGO */
 
-/*  */
-/*  */
+/* TEXT DIVIDER */
+.divider {
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  margin-left: 40%;
+  margin-right: 40%;
+}
+
+.divider::before, .divider::after {
+  flex: 0.5; /* Adjust the flex property to control the size of the pseudo-elements */
+  content: '';
+  padding: 1px;
+  background-color: white;
+  margin: 5px;
+}
+/* TEXT DIVIDER */
