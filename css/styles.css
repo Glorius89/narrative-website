@@ -78,13 +78,13 @@
 
 body {
   margin: 0;
-  font-family: 'Montserrat', 'sans serif';
+  font-family: 'Merriweather', 'serif';
   font-size: var(--bs-body-font-size);
   font-weight: 500;
   line-height: var(--bs-body-line-height);
-  color: #595C4F !important;
+  color: #2e1700 !important;
   text-align: var(--bs-body-text-align);
-  background-color: #fff;
+  background-color:#fff;
   -webkit-text-size-adjust: 100%;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
@@ -3107,8 +3107,8 @@ textarea.form-control-lg {
 
 .btn-primary {
   color: #fff;
-  background-color: #9B997B;
-  border-color: #9B997B;
+  background-color: #815034;
+  border-color: #815034;
   border-radius: 20px;
 }
 .btn-primary:hover {
@@ -4020,7 +4020,6 @@ textarea.form-control-lg {
 .nav-link {
   display: block;
   padding: 0.5rem 1rem;
-  color: #ffc800;
   text-decoration: none;
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
 }
@@ -11531,7 +11530,7 @@ p {
   #mainNav.navbar-shrink {
     padding-top: 1rem;
     padding-bottom: 1rem;
-    background-color: #212529;
+    background-color: #1d130e;
   }
   #mainNav.navbar-shrink .navbar-brand {
     font-size: 1.25em;
@@ -11949,7 +11948,7 @@ header.masthead-things-to-know .masthead-heading-things-to-know {
   position: absolute;
   width: 100%;
   height: 100%;
-  background: #DBB866;
+  background: #FFCC00;
   align-items: center;
   justify-content: center;
   opacity: 0;
@@ -12035,7 +12034,7 @@ header.masthead-things-to-know .masthead-heading-things-to-know {
   width: 2px;
   margin-left: -1.5px;
   content: "";
-  background-color: #504b45;
+  background-color: #cfb6a2;
 }
 .timeline > li {
   position: relative;
@@ -12077,9 +12076,9 @@ header.masthead-things-to-know .masthead-heading-things-to-know {
   margin-left: 0;
   text-align: center;
   color: white;
-  border: 7px solid #504b45;
+  border: 7px solid #cfb6a2;
   border-radius: 100%;
-  background-color: #ffc800;
+  background-color: #cfb6a2;
 }
 .timeline > li .timeline-image h4, .timeline > li .timeline-image .h4 {
   font-size: 10px;
@@ -13595,6 +13594,24 @@ iframe {
   content: '';
   padding: 1px;
   background-color: white;
+  margin: 5px;
+}
+/* TEXT DIVIDER */
+
+/* TEXT DIVIDER */
+.divider-dark {
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  margin-left: 40%;
+  margin-right: 40%;
+}
+
+.divider-dark::before, .divider-dark::after {
+  flex: 0.5; /* Adjust the flex property to control the size of the pseudo-elements */
+  content: '';
+  padding: 1px;
+  background-color: #cfb6a2;
   margin: 5px;
 }
 /* TEXT DIVIDER */
