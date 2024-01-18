@@ -69,7 +69,7 @@
 
 
 <!-- POST FEATURED WITH YOUTUBE VIDEO START -->
-<section class="page-section bg-light" style="padding: 0" id="team">
+<section class="page-section mb-7" style="padding: 0" id="team">
     <div class="container">
         <div class="text-center">
             <h2 class="section-heading text-uppercase"></h2>
@@ -79,7 +79,7 @@
             <div class="col-md-5">
                 <div class="p-3 p-md-5;">
                     <h2 style="font-size: 1rem; color: #DBB866; font-family: 'Montserrat'; font-weight: 500;"><b>OVERVIEW</b></h2>
-                    <h1 class="display-4 font-italic" style="font-family: 'Merriweather', 'serif'">Life in Bulgaria</h1>
+                    <h1 class="display-4 fw-bolder" style="color: #6d420d" style="font-family: 'Merriweather', 'serif'">Life in Bulgaria</h1>
                     <p class="my-3">Discover Sofia's cultural allure in our captivating video journey. From iconic landmarks like St. Nevsky Cathedral to the historic Serdica Complex, explore the heart of <b>Bulgaria's capital</b>. Immerse yourself in the city's rich heritage and friendly atmosphere, inviting you to experience Sofia's authentic charm.</p>
                 </div>
             </div>
@@ -97,7 +97,7 @@
 <!-- TABLE OF CONTENT -->
 <section class="imagegallery" style="background-color:#ECE7E1" style="padding-bottom: 0; padding-top: 0">
     <div class="container-imagegallery">
-        <h1 class="text-center tran animate__animated animate__fadeInLeft" style="visibility: visible;" >TABLE OF CONTENT</h1>
+        <h1 class="text-center tran fw-bolder animate__animated animate__fadeInLeft" style="color:#6d420d" style="visibility: visible;" >Table of Content</h1>
             <p class="text-center tran animate__animated animate__fadeInRight" style="font-size: 1rem; visibility: visible;">Click on the following to start your journey</p>
                 <div class="about-border"></div>
                     <div class="album">
@@ -189,41 +189,6 @@
 
 
 
-<!-- OPENSTREET MAP -->
-<section class="page-section" id="about">
-    <div class="container px-4 px-lg-5">
-        <div class="row gx-4 gx-lg-5 justify-content-center">
-            <div class="col-lg-8 text-center">
-                <h2 class="mt-0">Navigating the Heart of Bulgaria</h2>
-                <div class="about-border"></div>
-                <p class="text-white-75 mb-6">Get ready to explore the emotional spots where she hustles, grows, and celebrates. It's like a storytelling adventure through Sofia's life!</p>
-            </div>
-        </div>
-   
-        <div class="portfolio-item" style="position: relative;">
-            <!-- Container for the map -->
-            <div id="map" style="height: 350px;"></div>
-
-            <!-- Add pins/markers with Leaflet JavaScript -->
-            <script>
-                var map = L.map('map').setView([42.6977, 23.3219], 13); // Sofia coordinates and zoom level
-
-                L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-                    attribution: '© OpenStreetMap contributors'
-                }).addTo(map);
-
-                // Add a marker for Sofia
-                L.marker([42.6977, 23.3219]).addTo(map)
-                    .bindPopup('Sofia, Bulgaria'); // Customize the popup content
-            </script>
-        </div>
-    </div>
-</div>
-</section>
-<!-- OPENSTREET MAP END -->
-
-
-
 <!-- ONE FEATURED POST: UXPLORE INTRO -->
 <section style="background-color:#ECE7E1">
     <div class="container py-6" id="language">
@@ -232,12 +197,13 @@
                 <div class="lc-block mb-4">
                     <div editable="rich">
                         <p style="color: #DBB866; margin-left: 2rem" class="mt-7"><b>INTRO</b></p>
-                        <h2 class="fw-bold display-5">Welcome to UXplore</h2>
+                        <h2 style="margin-left: 3rem; color:#6d420d"
+                        class="fw-bold display-5 fw-bolder">Welcome to UXplore</h2>
                     </div>
                 </div>
                 <div class="lc-block mb-5">
                     <div editable="rich">
-                        <p class="lead text-muted" style="margin-left: 3rem">I'm Gloria, your virtual guide through the enchanting realms of wanderlust. Join me on a thrilling adventure as we uncover the world's most breathtaking destinations and transform your travel aspirations into reality.</p>
+                        <p style="margin-left: 3rem">I'm Gloria, your virtual guide through the enchanting realms of wanderlust. Join me on a thrilling adventure as we uncover the world's most breathtaking destinations and transform your travel aspirations into reality.</p>
                     </div>
                 </div>
     
@@ -301,13 +267,48 @@
 
 
 
+<!-- OPENSTREET MAP -->
+<section class="page-section" id="about">
+    <div class="container px-4 px-lg-5">
+        <div class="row gx-4 gx-lg-5 justify-content-center">
+            <div class="col-lg-8 text-center">
+                <h2 class="mt-0 fw-bolder" style="color:#6d420d">Navigating the Heart of Bulgaria</h2>
+                <div class="about-border"></div>
+                <p class="text-white-75 mb-6">Get ready to explore the emotional spots where she hustles, grows, and celebrates. It's like a storytelling adventure through Sofia's life!</p>
+            </div>
+        </div>
+   
+        <div class="portfolio-item" style="position: relative;">
+            <!-- Container for the map -->
+            <div id="map" style="height: 350px;"></div>
+
+            <!-- Add pins/markers with Leaflet JavaScript -->
+            <script>
+                var map = L.map('map').setView([42.6977, 23.3219], 13); // Sofia coordinates and zoom level
+
+                L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                    attribution: '© OpenStreetMap contributors'
+                }).addTo(map);
+
+                // Add a marker for Sofia
+                L.marker([42.6977, 23.3219]).addTo(map)
+                    .bindPopup('Sofia, Bulgaria'); // Customize the popup content
+            </script>
+        </div>
+    </div>
+</div>
+</section>
+<!-- OPENSTREET MAP END -->
+
+
+
 <!-- SIGN UP -->
 <section class="signup-section mt-5 mb-6" id="signup">
     <div class="container px-4 px-lg-5">
         <div class="row gx-4 gx-lg-5">
             <div class="col-md-8 col-lg-6 mx-auto text-center">
                 <i class="fa-regular fa-paper-plane"></i>
-                <h2 class="mb-3">Subscribe to receive updates!</h2>
+                <h2 class="mb-3 fw-bolder" style="color:#6d420d" >Subscribe to receive updates!</h2>
                 <div class="about-border mb-5"></div>
                 <!-- * * * * * * * * * * * * * * *-->
                 <!-- * * SB Forms Contact Form * *-->
@@ -352,54 +353,19 @@
 
                         
 <!-- FOOTER -->
-<div class="container-footer">
-    <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 my-5">
-        <div class="col mb-3">
-            <a href="#" class="d-flex align-items-center mb-3 link-dark text-decoration-none">
-                <div class="divider-custom-icon"><i class="fas fa-star fa-lg"></i></div>
-            </a>
-                    <p class="text-muted">©UXplore</p><p>Designed with ♥ by me</p>
-        </div>
-
-
-        <div class="col mb-3">
-        </div>
-  
-        <div class="col mb-3">
-            <h5>About me</h5>
-                <ul class="nav flex-column">
-                    <li class="nav-item mb-2"><a href="#team" class="nav-link p-0 text-muted">My story</a></li>
-                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Privacy</a></li>
-                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Subscribe</a></li>
-                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
-                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Sitemap</a></li>
-                </ul>
-        </div>
-  
-        <div class="col mb-3">
-            <h5>History</h5>
-                <ul class="nav flex-column">
-                    <li class="nav-item mb-2"><a href="file:///C:/Users/glori/OneDrive/Desktop/website/narrative-website/page-1.html#:~:text=V%20millennium%20BCE-,Prehistory,-One%20of%20these" class="nav-link p-0 text-muted">Prehistory</a></li>
-                    <li class="nav-item mb-2"><a href="file:///C:/Users/glori/OneDrive/Desktop/website/narrative-website/page-1.html#:~:text=29%20BCE-,Roman%20Rule,-Around%2029%20BCE" class="nav-link p-0 text-muted">Roman Rule</a></li>
-                    <li class="nav-item mb-2"><a href="file:///C:/Users/glori/OneDrive/Desktop/website/narrative-website/page-1.html#:~:text=809%20CE-,Byzantine%20Empire,-During%20the%20reign" class="nav-link p-0 text-muted">Byzantine Empire</a></li>
-                    <li class="nav-item mb-2"><a href="file:///C:/Users/glori/OneDrive/Desktop/website/narrative-website/page-1.html#:~:text=1382%2D1878-,Ottomans%20Rule,-During%20the%20Ottoman" class="nav-link p-0 text-muted">Ottomans Rule</a></li>
-                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted"></a></li>
-                </ul>
-        </div>
-  
-        <div class="col mb-3">
-            <h5>Landmarks</h5>
-                <ul class="nav flex-column">
-                    <li class="nav-item mb-2"><a href="file:///C:/Users/glori/OneDrive/Desktop/website/narrative-website/page-2.html#:~:text=Religious%20Buildings,city%27s%20unique%20tapestry." class="nav-link p-0 text-muted">Religious Buildings</a></li>
-                    <li class="nav-item mb-2"><a href="file:///C:/Users/glori/OneDrive/Desktop/website/narrative-website/page-2.html#:~:text=Historical%20Buildings,National%20Art%20Gallery." class="nav-link p-0 text-muted">Historical Buildings</a></li>
-                    <li class="nav-item mb-2"><a href="file:///C:/Users/glori/OneDrive/Desktop/website/narrative-website/page-2.html#:~:text=Museums%20and,Bulgaria%27s%20artistic%20journey." class="nav-link p-0 text-muted">Museum and Art Galleries</a></li>
-                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted"></a></li>
-                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted"></a></li>
-                </ul>
-        </div>
+<div class="container" style="background-color:#CDD2CB">
+    <footer class="py-3 my-4">
+      <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+        <li class="nav-item"><a href="#" class="nav-link px-2">Home</a></li>
+        <li class="nav-item"><a href="#" class="nav-link px-2">Features</a></li>
+        <li class="nav-item"><a href="#" class="nav-link px-2">Pricing</a></li>
+        <li class="nav-item"><a href="#" class="nav-link px-2">FAQs</a></li>
+        <li class="nav-item"><a href="#" class="nav-link px-2">About</a></li>
+      </ul>
+      <p class="text-center">&copy; UXplore</p>
     </footer>
+  </div>        
 <!-- FOOTER -->
-
 
 
 

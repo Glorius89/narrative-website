@@ -82,7 +82,7 @@ body {
   font-size: var(--bs-body-font-size);
   font-weight: 500;
   line-height: var(--bs-body-line-height);
-  color: #504b45;
+  color: #504b45 !important;
   text-align: var(--bs-body-text-align);
   background-color: #fff;
   -webkit-text-size-adjust: 100%;
@@ -7945,7 +7945,7 @@ textarea.form-control-lg {
 
 .bg-dark {
   --bs-bg-opacity: 1;
-  background-color: #6689db !important;
+  background-color: #6d420d !important;
 }
 
 .bg-black {
@@ -12035,7 +12035,7 @@ header.masthead-things-to-know .masthead-heading-things-to-know {
   width: 2px;
   margin-left: -1.5px;
   content: "";
-  background-color: #e9ecef;
+  background-color: #504b45;
 }
 .timeline > li {
   position: relative;
@@ -12077,7 +12077,7 @@ header.masthead-things-to-know .masthead-heading-things-to-know {
   margin-left: 0;
   text-align: center;
   color: white;
-  border: 7px solid #e9ecef;
+  border: 7px solid #504b45;
   border-radius: 100%;
   background-color: #ffc800;
 }
